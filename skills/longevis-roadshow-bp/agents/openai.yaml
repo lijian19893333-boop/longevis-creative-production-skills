@@ -1,4 +1,4 @@
 interface:
-  display_name: "LONGEVIS 路演BP制作"
-  short_description: "用于融资路演BP的新建与改版，兼顾商业叙事、独立配图和可编辑交付"
-  default_prompt: "请使用 $longevis-roadshow-bp，把现有资料整理成可直接转发的融资路演BP，保留实质内容、逐页独立配图，并把融资放在最后。"
+  display_name: "LONGEVIS Investor pitch decks"
+  short_description: "Narrative, evidence, editable slides and PPTX image auditing"
+  default_prompt: "Use $longevis-roadshow-bp for this task. Follow the user's requested output language and verify the actual deliverables."
