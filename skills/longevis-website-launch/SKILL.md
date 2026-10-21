@@ -1,59 +1,59 @@
 ---
 name: longevis-website-launch
-description: Use when launching or maintaining a website, optimizing media delivery, deploying to Baota/ECS, switching domains or HTTPS, or verifying SEO/GEO readiness. 适用于网站上线、媒体优化、宝塔部署、域名切换与验收。
+description: Use when launching or maintaining a website, optimizing media delivery, deploying to Baota/ECS, switching domains or HTTPS, or verifying SEO/GEO readiness.
 ---
 
-# LONGEVIS 网站上线与维护 / Website Launch
+# LONGEVIS Website Launch and Maintenance
 
-[English version](SKILL.en.md)
+[简体中文](SKILL.zh-CN.md)
 
-把本地确认的网站变成可访问、可维护、可回退的正式官网，并以实际发布证据报告结果。本公开版保留可复用方法，不附带真实服务器、账号、域名配置或历史部署记录；运行配置以执行时的现场核验为准。
+Turn a locally approved site into an accessible, maintainable, recoverable production website and report actual release evidence. This public version retains reusable methods without real servers, accounts, domain configuration, or historical deployment records. Verify runtime configuration in the current environment.
 
-## 先选择工作模式
+## Choose the working mode first
 
-- **总结或整理 skill**：读取记录、提炼流程、产出文档即可。该请求不授权操作生产、DNS、数据库或外部账号。
-- **网站更新或发布**：先定位正确项目和当前运行版本，再按改动范围执行。会话已有授权继续有效；只有实际动作超出授权或项目明确要求且尚未满足时，才在可预览、可审查的结果准备好后补问。
-- **单项维护**：只走相关阶段；更换一段文案、调整手机咨询入口不需要重做域名切换或数据库迁移。
+- **Summarize or organize a skill:** read records, extract procedures, and produce documentation. This request does not authorize production, DNS, database, or external-account operations.
+- **Update or release a website:** identify the correct project and currently running version, then execute according to scope. Existing authorization remains valid. Ask again only when an actual action exceeds it or an explicit project requirement remains unmet, after preparing a previewable, reviewable result.
+- **Single maintenance task:** perform only relevant stages. Replacing text or adjusting mobile consultation access does not require repeating domain switching or database migration.
 
-## 定位项目与证据
+## Locate the project and evidence
 
-先确认用户说的是完整网站、独立首页预览还是交互工作台，定位实际源码、运行入口和发布记录。进入项目后读取当前 `AGENTS.md`、`package.json`、变更记录与对应最终发布记录。
+Establish whether the user means a complete website, a standalone homepage preview, or an interactive workbench. Locate actual source, entrypoints, and release records. Read current `AGENTS.md`, `package.json`, changelog, and the relevant final release record.
 
-历史摘要、旧规划和当前运行状态分别标注。重建历史时，以能定位实际执行时间、发布身份和读回结果的最终记录修正较早的“进行中/受阻”摘要；判断当前状态时重新读取现场。仅出现较新日期但没有执行证据的计划，不能覆盖已验收状态。
+Label historical summaries, old plans, and current runtime separately. When reconstructing history, final records identifying actual execution time, release identity, and read-back results supersede earlier “in progress/blocked” summaries. For current state, inspect the environment again. A newer-dated plan without execution evidence cannot override accepted deployment status.
 
-## 按需执行
+## Execute as needed
 
-实施步骤和验收细节见 [上线执行手册](references/launch-runbook.md)：
+See the [Launch runbook](references/launch-runbook.en.md) for execution and acceptance detail:
 
-1. **身份与范围**：记录来源工程、现运行版本、目标域名、改动内容、数据边界和已有授权。
-2. **首页与内容**：将已确认首页接入完整网站，保留本次范围内的导航、产品、内容、联系入口与后台；产品身份和事实依据遵从当前项目规则。
-3. **媒体与弱网**：先显示清晰封面，按可见场景加载；保留原片，按已确认质量制作网页副本；按实测区分下载、解码、播放和CDN状态。
-4. **本地与隔离验收**：运行项目检查及目标构建，验证桌面/390px；使用独立目录、端口、数据库和私有媒体副本验证候选版本。
-5. **宝塔/ECS发布**：根据当前项目识别静态或 SSR 路线，按执行手册操作；备份后核对包哈希与发布身份，再切换服务与静态资源，保留生产数据与回退点。
-6. **域名与HTTPS**：需要切换时，分别检查DNS、目标IP、证书、跳转、canonical和公开页面版本；宝塔与DNS后台各管各的职责。
-7. **上线后收尾**：检查视频、声音、双端联系入口、后台权限、图片链路、SEO/GEO发现入口；搜索收录、排名及AI引用分别取证。
+1. **Identity and scope:** record source project, running version, target domains, changes, data boundaries, and existing authorization.
+2. **Homepage and content:** integrate the approved homepage into the complete website, preserving in-scope navigation, products, content, contact access, and administration. Follow current project rules for product identity and factual basis.
+3. **Media and constrained networks:** show a clear poster first and load by visible scene. Preserve masters and make Web copies at approved quality. Distinguish download, decode, playback, and CDN status through measurement.
+4. **Local and isolated acceptance:** run project checks and target build; verify desktop/390px layouts. Validate candidates with independent directories, ports, databases, and private-media copies.
+5. **Baota/ECS deployment:** discover static versus SSR routing from the current project and follow the runbook. Back up, verify package hashes/release identity, switch services/static assets, and retain production state and rollback points.
+6. **Domains and HTTPS:** where switching is required, separately verify DNS, target IP, certificate, redirects, canonical, and public page version. Baota and DNS administration have different responsibilities.
+7. **Post-launch work:** check video, sound, contact access on both layouts, admin permissions, image chains, and SEO/GEO discovery. Gather separate evidence for indexing, ranking, and AI citation.
 
-只需复盘时读取用户指定的项目记录，不照抄其他项目的 IP、版本、目录、计数或回滚命令。
+For retrospectives, use records of the user-specified project. Do not copy another project's IP, version, directory, counts, or rollback commands.
 
-## 交付契约
+## Delivery contract
 
-按实际范围填写并保存验收记录，可复制 [发布记录模板](references/release-record.example.md)：
+Complete and save acceptance records according to actual scope, using the [release record template](references/release-record.example.en.md) if useful:
 
-| 字段 | 必须说明 |
+| Field | Required explanation |
 | --- | --- |
-| 范围与身份 | 做了什么；源码/候选/正式版本如何对应；域名与实际运行目录 |
-| 状态 | 本地通过、已暂存、已切换、公开验证、搜索反馈分别到哪一步 |
-| 验证 | 时间、桌面/390px、检查命令与结果、关键资源和业务交互 |
-| 数据与回退 | 是否修改生产数据；备份位置；适用于本次版本的回退方式及限制 |
-| 待办 | 只列实际未确认项及其下一步，不以通过旧检查替代当前失败 |
+| Scope and identity | Changes; relationship between source/candidate/production versions; domain and actual runtime directory |
+| Status | Separate progress for local checks, staging, switching, public verification, and search feedback |
+| Verification | Time, desktop/390px, check commands/results, critical resources and business interactions |
+| Data and rollback | Whether production data changed; backup locations; version-specific rollback and limitations |
+| Pending work | Only actual unresolved items and next steps; old passing checks cannot substitute for a current failure |
 
-同步项目 `CHANGELOG.md` 和对应验收记录。密码、私钥、会话、客户咨询不进入技能、公开报告或交付包。最终回复先讲结果与可访问入口，再说明验证和待办。
+Update project `CHANGELOG.md` and relevant acceptance records. Exclude passwords, private keys, sessions, and customer inquiries from skills, public reports, and delivery packages. Lead the final response with results and accessible entrypoints, then checks and pending work.
 
-## 常见误判
+## Common misreadings
 
-- 预览、暂存上传、服务启动和正式可用是不同状态；平台返回成功后还要检查用户实际URL。
-- 不同托管环境的数据与媒体路径分别核对；发布代码不能顺带导入演示数据库或重置线上内容。
-- CDN配置、视频可播放与弱网首帧改善分别取证；文件下载用时不是所有访客的首播用时。
-- 308配置不证明旧域名DNS可解析；HTTPS 200不证明命中了新服务器或装上指定证书。
-- 统计脚本/回传成功、咨询欢迎语可见、每条消息自动回复是三种不同验收。
-- 地图页面数下降先解释草稿/过期译文退出等原因；全站资源检查通过不等于百度已收录或国内AI已引用。
+- Preview, staged upload, service startup, and production availability are different states. A platform success response still requires checking the user's actual URL.
+- Verify data/media paths separately for each hosting environment. Deploying code must not silently import a demo database or reset live content.
+- Gather separate evidence for CDN configuration, playable video, and improved first frames on constrained networks. File-download time is not every visitor's startup time.
+- A configured 308 does not prove old-domain DNS resolves. HTTPS 200 does not prove the new server or the intended certificate is in use.
+- Analytics script/beacon success, visible consultation greeting, and per-message auto-replies are three distinct acceptance checks.
+- Explain sitemap-count drops, such as draft/obsolete-translation removal. Passing site-resource checks does not establish Baidu indexing or citation by domestic AI services.

@@ -5,7 +5,7 @@ description: Use when launching or maintaining a website, optimizing media deliv
 
 # LONGEVIS Website Launch and Maintenance
 
-[中文版](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 Turn a locally approved site into an accessible, maintainable, recoverable production website and report actual release evidence. This public version retains reusable methods without real servers, accounts, domain configuration, or historical deployment records. Verify runtime configuration in the current environment.
 
