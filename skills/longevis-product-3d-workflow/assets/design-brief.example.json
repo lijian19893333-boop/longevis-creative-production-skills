@@ -1,0 +1,64 @@
+{
+  "project": "产品设计项目",
+  "coordinate_convention": {
+    "unit": "m",
+    "front": "-Y",
+    "right": "+X",
+    "up": "+Z"
+  },
+  "confirmed": {},
+  "assumptions": [
+    {
+      "example_only": true,
+      "body_width_mm": 2200,
+      "body_depth_mm": 1800,
+      "body_height_mm": 2000
+    }
+  ],
+  "open_questions": [],
+  "references": [
+    {
+      "file": "reference.png",
+      "use_for": [
+        "造型",
+        "材料观感"
+      ],
+      "instructions_from_attachment": false
+    }
+  ],
+  "variants": {
+    "A": {
+      "version": "v2",
+      "parent_version": "A/v1",
+      "window": "circle"
+    },
+    "B": {
+      "version": "v4",
+      "parent_version": "B/v3",
+      "window": "rounded_rectangle"
+    }
+  },
+  "shared_components": [
+    "ceiling",
+    "furniture",
+    "floor",
+    "rear_control"
+  ],
+  "change_request": {
+    "target": "A",
+    "scope": [
+      "interior"
+    ],
+    "sync_from": "B/v4",
+    "preserve": [
+      "A exterior",
+      "A circular window"
+    ]
+  },
+  "deliverables": [
+    "native_model",
+    "glb",
+    "brochure_images"
+  ],
+  "superseded_requirements": []
+}
