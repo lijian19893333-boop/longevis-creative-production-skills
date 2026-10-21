@@ -1,4 +1,4 @@
 interface:
-  display_name: "LONGEVIS 产品 3D 设计与画册渲染"
-  short_description: "从参考图到参数化建模、方案派生、交互检查与多视角画册成图交付"
-  default_prompt: "使用 $longevis-product-3d-workflow，根据参考图和尺寸要求建立可迭代的 3D 方案，并按需要输出画册渲染图。"
+  display_name: "LONGEVIS Product 3D and brochure renders"
+  short_description: "Product variants, model snapshots and brochure rendering"
+  default_prompt: "Use $longevis-product-3d-workflow for this task. Follow the user's requested output language and verify the actual deliverables."
