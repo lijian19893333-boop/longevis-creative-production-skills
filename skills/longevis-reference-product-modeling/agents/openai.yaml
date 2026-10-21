@@ -1,4 +1,4 @@
 interface:
-  display_name: "Reference Product Modeling / 参考图产品建模"
-  short_description: "Build inspectable Blender models from calibrated product references"
+  display_name: "LONGEVIS Reference-based product modeling"
+  short_description: "Calibrated product modeling, silhouettes and local 3D preview"
   default_prompt: "Use $longevis-reference-product-modeling to build a Blender model from my product references and confirmed dimensions, verify each view, and deliver a working interactive preview with accurate door motion when supported by the references."
