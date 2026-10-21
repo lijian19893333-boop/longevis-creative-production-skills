@@ -1,45 +1,45 @@
 ---
 name: longevis-science-video
-description: 用于制作科普视频或建立科普视频工作流，涵盖资料核对、脚本分镜、机制动画、配音字幕与视频验收。
+description: Use when producing science explainer videos or establishing a science-video workflow, including research verification, scripts, storyboards, mechanism animation, narration, subtitles, and video acceptance.
 ---
 
-# LONGEVIS 科普视频工作流
+# LONGEVIS Science Video Workflow
 
-[English version](SKILL.en.md)
+[简体中文](SKILL.zh-CN.md)
 
-将主题推进到可评审的视频，交付时区分科学核验、文件技术核验和用户审美验收。公开版提供工作方法与 brief 示例，不附带视频渲染工程、配音模型、商业素材或付费服务账号。
+Take a topic through to a reviewable video, distinguishing scientific verification, technical file checks, and the user's aesthetic acceptance. This public package supplies a working method and example brief, not a video-rendering project, voice model, commercial assets, or paid-service accounts.
 
-## 1. 发现环境与确定任务
+## 1. Discover the environment and define the task
 
-先找当前项目的说明、源码、依赖和运行入口，确认工具实际存在。已有工程优先复用并新建影片版本；没有工程时按当前可用工具建立工程，不假定存在特定命令或组件。
+Find the current project's documentation, source, dependencies, and entrypoints first; confirm that tools actually exist. Reuse an existing project and create a new film version where possible. Without an existing project, establish one with currently available tools rather than assuming particular commands or components exist.
 
-从用户材料确认主题、受众、时长、画幅、语言和风格。可推断时直接推进，只询问影响制作的缺失信息。默认中文旁白与字幕、横屏 1080p，最终报告实际时长与规格。可复制 [brief 示例](assets/brief.example.json)，其中数据和旁白均是填写位置。
+Use the user's materials to establish topic, audience, duration, aspect ratio, language, and style. Proceed where these can be inferred; ask only for missing information that affects production. Use the requested narration and subtitle languages, or the conversation language when unspecified. Default to landscape 1080p. Report actual duration and specifications at delivery. Copy the [example brief](assets/brief.example.json) if useful; its data and narration fields are placeholders.
 
-## 2. 科学事实与分镜
+## 2. Scientific facts and storyboard
 
-查权威资料，记录标题、链接、访问日期和支持的具体表述。每句关键旁白对应来源；把已核验事实、口述待核验、规划与设计示例分开。不要从基础机制推导出具体产品的治疗效果，产品型号与参数须来自当前确认资料。
+Consult authoritative sources and record title, link, access date, and the specific statement supported. Map each key narration statement to a source. Separate verified facts, unverified user statements, plans, and design examples. Do not infer a particular product's treatment effects from a basic mechanism. Product models and parameters require currently confirmed material.
 
-按“现象或问题 → 机制 → 边界与应用”组织脚本，逐镜头记录画面、旁白、字幕、时长和 sourceIds。科学事实缺证据时缩小表述或明确待核验，不编造来源。
+Structure the script as “phenomenon or question → mechanism → boundaries and applications.” For each shot record visuals, narration, subtitles, duration, and sourceIds. Narrow unsupported scientific claims or mark them pending verification; do not invent sources.
 
-## 3. 选择制作路径
+## 3. Choose the production route
 
-- 机制、数据与流程可用 Remotion / Three.js 帧驱动动画；使用时读取当前环境可用的相关技能或官方文档。
-- 人物、产品与空间可用 Blender 原生几何、材质、灯光与相机，或用户有权使用的素材。
-- 混合影片共用旁白、字幕和时间线；机制草图与正式三维影片分别标明完成程度。
-- 默认先本地打样。LibTV 或其他外部生成服务仅在用户明确选择后使用，并核对成本与授权范围。
+- Use frame-driven Remotion / Three.js animation for mechanisms, data, and processes when appropriate. Read the relevant skills available in the environment or current official documentation before use.
+- Use native Blender geometry, materials, lighting, and cameras, or assets the user has rights to use, for people, products, and spaces.
+- Mixed films share narration, subtitles, and a timeline. State the completion status of mechanism sketches and finished 3D footage separately.
+- Default to local prototypes first. Use LibTV or another external generation service only when the user explicitly chooses it, checking cost and authorization scope.
 
-视觉方向根据当前需求设定，不继承其他项目的人物、结构、品牌或参数。运动必须体现机制本身，例如流动、交换、形变或信号传递，不能只移动镜头制造动态假象。
+Set visual direction from the current brief. Do not inherit people, structures, brands, or parameters from another project. Motion must express the mechanism itself, such as flow, exchange, deformation, or signal transmission; moving the camera alone does not demonstrate a moving mechanism.
 
-## 4. 音频、字幕与版本
+## 4. Audio, subtitles, and versions
 
-先试代表段落并试听术语、衔接和配速，再生成全篇。沿用用户已确认音色时仍需验收新文本。系统语音可作明确标注的占位，不自动当作专业配音。声音克隆使用有权使用的样本。
+Test a representative passage and listen for terminology, transitions, and pacing before generating the full narration. Reusing an approved voice still requires acceptance of the new text. Clearly label system speech used as a placeholder; do not automatically treat it as professional narration. Voice cloning requires samples the user has rights to use.
 
-按逐句实际音频时长建立时间线；字幕与旁白可以使用不同语言，但含义须一致。修改脚本后重新生成派生时间线。每片与每次交付使用独立版本，不覆盖已有成果。
+Build the timeline from actual sentence-level audio durations. Subtitles and narration may use different languages but must preserve meaning. Regenerate derived timelines after script changes. Give each film and delivery an independent version rather than overwriting previous work.
 
-## 5. 导出、检查与交付
+## 5. Export, check, and deliver
 
-先验证项目，再导出。具体命令从项目说明发现，不能杜撰运行成功。
+Validate the project before export. Discover actual commands from project documentation; do not invent successful execution.
 
-检查实际导出文件的解码、时长、分辨率、音轨与字幕；逐镜头和场景边界抽帧。机制段比较多个时间点，确认目标区域确实运动。用实际播放器检查播放及音画同步。
+Check decoding, duration, resolution, audio tracks, and subtitles in the actual export. Sample frames from every shot and scene boundary. Compare several time points in mechanism sequences to confirm that the intended region actually moves. Use a real player to inspect playback and audio/video synchronization.
 
-交付实际 MP4、可编辑源码或分镜、字幕和使用说明，说明实际完成的核验与剩余依赖。文件生成、上传、真实播放和用户接受是不同状态。若环境或服务不可用，保留已完成内容并说明缺少的条件。
+Deliver the actual MP4, editable source or storyboard, subtitles, and usage instructions. State checks actually performed and remaining dependencies. File generation, upload, actual playback, and user acceptance are different states. If the environment or a service is unavailable, preserve completed work and explain the missing conditions.

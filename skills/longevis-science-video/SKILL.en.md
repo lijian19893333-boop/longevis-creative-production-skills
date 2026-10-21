@@ -5,7 +5,7 @@ description: Use when producing science explainer videos or establishing a scien
 
 # LONGEVIS Science Video Workflow
 
-[中文版](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 Take a topic through to a reviewable video, distinguishing scientific verification, technical file checks, and the user's aesthetic acceptance. This public package supplies a working method and example brief, not a video-rendering project, voice model, commercial assets, or paid-service accounts.
 
@@ -13,7 +13,7 @@ Take a topic through to a reviewable video, distinguishing scientific verificati
 
 Find the current project's documentation, source, dependencies, and entrypoints first; confirm that tools actually exist. Reuse an existing project and create a new film version where possible. Without an existing project, establish one with currently available tools rather than assuming particular commands or components exist.
 
-Use the user's materials to establish topic, audience, duration, aspect ratio, language, and style. Proceed where these can be inferred; ask only for missing information that affects production. Defaults are Chinese narration and subtitles, landscape 1080p. Report actual duration and specifications at delivery. Copy the [example brief](assets/brief.example.json) if useful; its data and narration fields are placeholders.
+Use the user's materials to establish topic, audience, duration, aspect ratio, language, and style. Proceed where these can be inferred; ask only for missing information that affects production. Use the requested narration and subtitle languages, or the conversation language when unspecified. Default to landscape 1080p. Report actual duration and specifications at delivery. Copy the [example brief](assets/brief.example.json) if useful; its data and narration fields are placeholders.
 
 ## 2. Scientific facts and storyboard
 
