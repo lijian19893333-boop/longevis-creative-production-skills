@@ -1,0 +1,44 @@
+name: Usage question / 使用咨询
+description: Ask about installation, dependencies, outputs or choosing a skill. 询问安装、依赖、产物或选型。
+title: '[Question]: '
+labels:
+- question
+body:
+- type: markdown
+  attributes:
+    value: English and Chinese are welcome. 欢迎使用中文或英文。 Please use shareable examples and remove credentials
+      or customer details. 请使用可公开的示例，移除密钥和客户资料。
+- type: dropdown
+  id: skill
+  attributes:
+    label: Affected skill / 相关 Skill
+    options:
+    - longevity-science-video
+    - longevity-roadshow-bp
+    - longevity-product-3d-workflow
+    - longevity-website-launch
+    - longevity-reference-product-modeling
+    - longevity-product-appearance-calibration
+    - longevity-baota-website-ops
+    - longevity-design-patent-3d-workflow
+    - longevity-chamber-app
+    - longevity-patent-drafting
+    - Repository / installation / 仓库或安装
+    - Other / 其他
+  validations:
+    required: true
+- type: textarea
+  id: goal
+  attributes:
+    label: Your task and question / 任务与问题
+  validations:
+    required: true
+- type: textarea
+  id: tried
+  attributes:
+    label: What have you tried? / 已尝试的方法
+    description: Include relevant docs, prompt, environment or sanitized errors. 可附已读文档、提示词、环境或脱敏报错。
+- type: textarea
+  id: help
+  attributes:
+    label: What help would be useful? / 希望得到什么帮助？

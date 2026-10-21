@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+- name: Wiki / 使用指南
+  url: https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki
+  about: Choose a skill and read installation examples. 选择 Skill 并查看安装示例。
+- name: Public roadmap / 公开改进看板
+  url: https://github.com/users/lijian19893333-boop/projects/1
+  about: See planned and ongoing improvements. 查看待办和进行中的改进。
+- name: Collaboration / 合作交流
+  url: mailto:248234067@qq.com
+  about: Company and collaboration enquiries. 公司及合作交流。
