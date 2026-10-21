@@ -1,10 +1,28 @@
 # LONGEVIS Creative Production Skills
 
-**English** | [简体中文](README.zh-CN.md)
+**English** | [简体中文](README.zh-CN.md) | [Wiki: about us & getting started](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)
 
-Ten agent skills developed through practical creative production, product delivery and website maintenance. Every skill has complete Chinese and English entrypoints with corresponding Markdown reference documents. Executable helpers and machine-readable configurations are shared. Install only the skill needed for your task.
+Ten open-source AI agent skills distilled from the everyday work of [LONGEVIS](https://www.longevis.net/), a biohacking and longevity hardware solutions company. We use and refine these workflows in our own projects, and share them in the hope that they can help others with similar work.
 
-This update adds six skills: reference modeling, appearance calibration, Baota operations, exterior design views, equipment control apps, and technical disclosures/engineering figures. It also completes the English instructions and references for the original four skills.
+Every skill has complete English and Chinese instructions and corresponding Markdown references. Executable helpers and machine-readable configurations are shared. Install only the skill needed for your task.
+
+## About LONGEVIS
+
+LONGEVIS (朗静岛) develops hardware and integrated equipment solutions for biohacking, longevity and recovery spaces. Our product range includes electric and nitrogen cryotherapy chambers, mild hyperbaric oxygen chambers, infrared wellness cabins and dry flotation beds. Our work connects physical products with their design, digital interfaces, educational content, websites and project delivery.
+
+That work is where these skills come from. Alongside developing and delivering equipment, we need to model products from references, make materials and lighting consistent, explain technical principles in videos, prepare presentations, define control interfaces, organize engineering documents and maintain websites.
+
+Learn more at the [LONGEVIS official website](https://www.longevis.net/). For collaboration or questions about LONGEVIS and these skills, contact **[248234067@qq.com](mailto:248234067@qq.com)**. For reproducible skill issues and improvement suggestions, please use [GitHub Issues](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues).
+
+## From everyday work to reusable skills
+
+We start with a task that needs doing in our own work. As we use AI agents to complete it, we refine the instructions, record recurring problems and identify the steps and checks that make the result useful. We then extract those lessons into a reusable skill, with supporting references, templates or helper scripts where needed.
+
+The process is simple: **real work → daily use and iteration → lessons learned → reusable workflows → open source**.
+
+These skills reflect what we have learned so far. We hope they help other builders, designers and teams make progress on their own projects, and we welcome improvements from people using them in different contexts.
+
+## Skill catalog
 
 | English entry | 中文 | Purpose |
 |---|---|---|
