@@ -5,7 +5,7 @@ description: Use when creating or modifying product or chamber 3D concepts from 
 
 # LONGEVIS Product 3D Design and Brochure Rendering
 
-[中文版](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 Connect “reference → explicit constraints → parametric model → iteration → native rendering → inspection and delivery” in a traceable workflow. Enter at the stage the user currently needs. If an existing model only needs images, render it directly rather than rebuilding the product.
 
