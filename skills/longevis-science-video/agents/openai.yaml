@@ -1,4 +1,0 @@
-interface:
-  display_name: "LONGEVIS Science videos"
-  short_description: "Evidence-based scripts, mechanism animation and video delivery"
-  default_prompt: "Use $longevis-science-video for this task. Follow the user's requested output language and verify the actual deliverables."
