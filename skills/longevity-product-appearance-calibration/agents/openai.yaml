@@ -1,0 +1,4 @@
+interface:
+  display_name: "Longevity · LONGEVIS Material and lighting calibration"
+  short_description: "Product material, lighting and viewer calibration"
+  default_prompt: "Use $longevity-product-appearance-calibration to calibrate an existing product model against its appearance reference and verify the actual viewer."
