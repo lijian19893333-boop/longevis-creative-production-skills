@@ -1,6 +1,6 @@
 # LONGEVIS Creative Production Skills
 
-[简体中文](README.md) | **English**
+**English** | [简体中文](README.zh-CN.md)
 
 Ten agent skills developed through practical creative production, product delivery and website maintenance. Every skill has complete Chinese and English entrypoints with corresponding Markdown reference documents. Executable helpers and machine-readable configurations are shared. Install only the skill needed for your task.
 
@@ -8,16 +8,16 @@ This update adds six skills: reference modeling, appearance calibration, Baota o
 
 | English entry | 中文 | Purpose |
 |---|---|---|
-| [Science videos](skills/longevis-science-video/SKILL.en.md) | [中文](skills/longevis-science-video/SKILL.md) | Sources, mechanism storyboards, narration, subtitles and media checks |
-| [Investor pitch decks](skills/longevis-roadshow-bp/SKILL.en.md) | [中文](skills/longevis-roadshow-bp/SKILL.md) | Narrative, evidence, editable slides and PPTX image auditing |
-| [Product 3D and brochure renders](skills/longevis-product-3d-workflow/SKILL.en.md) | [中文](skills/longevis-product-3d-workflow/SKILL.md) | A/B variants, source snapshots, batch rendering and image packaging |
-| [Website launch](skills/longevis-website-launch/SKILL.en.md) | [中文](skills/longevis-website-launch/SKILL.md) | Media, domains/HTTPS, releases and SEO/GEO readiness |
-| [Reference-based product modeling](skills/longevis-reference-product-modeling/SKILL.en.md) | [中文](skills/longevis-reference-product-modeling/SKILL.md) | Multi-view geometry, silhouette comparison, native models and a local viewer |
-| [Material and lighting calibration](skills/longevis-product-appearance-calibration/SKILL.en.md) | [中文](skills/longevis-product-appearance-calibration/SKILL.md) | Materials, lighting, GLB recipes and native/browser display checks |
-| [Baota deployment and rollback](skills/longevis-baota-website-ops/SKILL.en.md) | [中文](skills/longevis-baota-website-ops/SKILL.md) | Static/SSR routing, persistent data, release candidates and public verification |
-| [Exterior design views](skills/longevis-design-patent-3d-workflow/SKILL.en.md) | [中文](skills/longevis-design-patent-3d-workflow/SKILL.md) | Native models, six-view orientation, complete silhouettes and package consistency |
-| [Equipment control apps](skills/longevis-chamber-app/SKILL.en.md) | [中文](skills/longevis-chamber-app/SKILL.md) | Features, settings, state machines, ACK/physical feedback and acceptance specs |
-| [Technical disclosures and engineering figures](skills/longevis-patent-drafting/SKILL.en.md) | [中文](skills/longevis-patent-drafting/SKILL.md) | Facts, components, drafts, annotation and editable figure-source consistency |
+| [Science videos](skills/longevis-science-video/SKILL.md) | [中文](skills/longevis-science-video/SKILL.zh-CN.md) | Sources, mechanism storyboards, narration, subtitles and media checks |
+| [Investor pitch decks](skills/longevis-roadshow-bp/SKILL.md) | [中文](skills/longevis-roadshow-bp/SKILL.zh-CN.md) | Narrative, evidence, editable slides and PPTX image auditing |
+| [Product 3D and brochure renders](skills/longevis-product-3d-workflow/SKILL.md) | [中文](skills/longevis-product-3d-workflow/SKILL.zh-CN.md) | A/B variants, source snapshots, batch rendering and image packaging |
+| [Website launch](skills/longevis-website-launch/SKILL.md) | [中文](skills/longevis-website-launch/SKILL.zh-CN.md) | Media, domains/HTTPS, releases and SEO/GEO readiness |
+| [Reference-based product modeling](skills/longevis-reference-product-modeling/SKILL.md) | [中文](skills/longevis-reference-product-modeling/SKILL.zh-CN.md) | Multi-view geometry, silhouette comparison, native models and a local viewer |
+| [Material and lighting calibration](skills/longevis-product-appearance-calibration/SKILL.md) | [中文](skills/longevis-product-appearance-calibration/SKILL.zh-CN.md) | Materials, lighting, GLB recipes and native/browser display checks |
+| [Baota deployment and rollback](skills/longevis-baota-website-ops/SKILL.md) | [中文](skills/longevis-baota-website-ops/SKILL.zh-CN.md) | Static/SSR routing, persistent data, release candidates and public verification |
+| [Exterior design views](skills/longevis-design-patent-3d-workflow/SKILL.md) | [中文](skills/longevis-design-patent-3d-workflow/SKILL.zh-CN.md) | Native models, six-view orientation, complete silhouettes and package consistency |
+| [Equipment control apps](skills/longevis-chamber-app/SKILL.md) | [中文](skills/longevis-chamber-app/SKILL.zh-CN.md) | Features, settings, state machines, ACK/physical feedback and acceptance specs |
+| [Technical disclosures and engineering figures](skills/longevis-patent-drafting/SKILL.md) | [中文](skills/longevis-patent-drafting/SKILL.zh-CN.md) | Facts, components, drafts, annotation and editable figure-source consistency |
 
 ## Install
 
@@ -30,12 +30,12 @@ mkdir -p ~/.codex/skills
 cp -R skills/longevis-reference-product-modeling ~/.codex/skills/
 ```
 
-Check for and back up an existing folder before copying. Confirm recognition in a new session. `SKILL.md` is the default Chinese entrypoint. For complete English instructions, explicitly select `SKILL.en.md` in the same folder. Both use the same invocation name. Follow the corresponding installation conventions in other agents.
+Check for and back up an existing folder before copying. Confirm recognition in a new session. `SKILL.md` is the default English instruction file. Full Chinese instructions are in `SKILL.zh-CN.md` in the same folder. Existing `SKILL.en.md` links remain available. Follow the user’s requested output language, or their conversation language when unspecified. Follow the corresponding installation conventions in other agents.
 
 ## Example prompts
 
 ```text
-Use $longevis-reference-product-modeling, reading its SKILL.en.md.
+Use $longevis-reference-product-modeling.
 Create an editable model from my references and confirmed dimensions.
 Check silhouettes and view relationships first; deliver native files, GLB,
 a viewer and remaining differences.

@@ -1,4 +1,11 @@
-# 版本记录 / Changelog
+# Changelog
+
+## 0.3.1 — 2026-10-22
+
+- English-first repository homepage, skill discovery instructions and UI metadata.
+- Full Chinese documentation is preserved in README.zh-CN.md and each SKILL.zh-CN.md; existing English URLs continue to work.
+- English default viewer and shared example labels; output language follows the user request.
+- Default-language routing and local links checked; executable helpers and geometry/configuration values unchanged.
 
 ## 0.3.0 — 2026-10-22
 
