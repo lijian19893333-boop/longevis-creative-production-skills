@@ -1,4 +1,0 @@
-interface:
-  display_name: "LONGEVIS Website launch"
-  short_description: "Media, domains/HTTPS, releases and SEO/GEO readiness"
-  default_prompt: "Use $longevis-website-launch to prepare and verify this website release, including backups, rollback, public URLs and outstanding checks. Follow the current project instructions and authorization."
