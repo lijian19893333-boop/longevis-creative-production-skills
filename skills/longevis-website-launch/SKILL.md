@@ -5,6 +5,8 @@ description: Use when launching or maintaining a website, optimizing media deliv
 
 # LONGEVIS 网站上线与维护 / Website Launch
 
+[English version](SKILL.en.md)
+
 把本地确认的网站变成可访问、可维护、可回退的正式官网，并以实际发布证据报告结果。本公开版保留可复用方法，不附带真实服务器、账号、域名配置或历史部署记录；运行配置以执行时的现场核验为准。
 
 ## 先选择工作模式
