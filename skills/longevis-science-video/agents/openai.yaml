@@ -1,0 +1,4 @@
+interface:
+  display_name: "LONGEVIS 科普视频工作流"
+  short_description: "核对资料并制作科普视频，复用动态机制动画、中文旁白、字幕和三维镜头"
+  default_prompt: "使用 $longevis-science-video 制作一条关于指定主题的科普视频，完成分镜、动画、配音字幕并导出可检查的 MP4。"
