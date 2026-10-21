@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>产品三维查看器</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#24342c;background:#f1f4f2}body{margin:0}header,nav,footer{padding:14px 20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}header{background:white;border-bottom:1px solid #dce3de}h1{font-size:18px;margin:0 auto 0 0}button,select,.file-label{font:inherit;font-size:13px;padding:8px 12px;border:1px solid #bbc9c0;border-radius:6px;background:white;color:inherit;cursor:pointer}button:disabled,select:disabled{opacity:.45;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid #7caf94}model-viewer{width:100%;height:64vh;min-height:360px;background:radial-gradient(#fcfdfc,#dfe7e1)}footer{font-size:12px;line-height:1.7;color:#57695e}#status{padding:0 20px;font-size:13px}#time{width:180px}#file{max-width:215px}label{font-size:13px}@media(max-width:600px){header,nav,footer{padding:12px;gap:7px}button{padding:8px}h1{width:100%}model-viewer{height:55vh}}
+</style>
+<header><a href="index.html" lang="en">English</a><h1>产品三维查看器</h1><label>载入 GLB <input type="file" id="file" accept=".glb"></label><button id="refresh">刷新模型</button></header>
+<model-viewer id="viewer" camera-controls camera-orbit="35deg 78deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 180deg auto" environment-image="neutral" shadow-intensity="0.5" interaction-prompt="none" animation-crossfade-duration="0" alt="产品三维模型"></model-viewer>
+<p id="status" role="status">正在初始化…</p>
+<nav aria-label="视角"><button data-view="0,90" disabled>正面</button><button data-view="180,90" disabled>后面</button><button data-view="-90,90" disabled>左侧</button><button data-view="90,90" disabled>右侧</button><button data-view="0,0" disabled>顶部</button><button data-view="0,180" disabled>底部</button><button id="reset" disabled>重置视角</button><button id="spin" disabled>自动旋转</button></nav>
+<nav aria-label="动画"><label>动画 <select id="clips" disabled><option>无动画</option></select></label><button id="play" disabled>播放</button><input id="time" type="range" min="0" max="1000" value="0" aria-label="动画进度" disabled><span id="progress">0%</span></nav>
+<footer>拖动旋转，滚轮缩放。默认读取同目录 model.glb，也可从本机选择自带贴图的 GLB。动画由模型提供；本模板不自动生成门轴或内部结构。</footer>
+<script type="module" src="viewer.js"></script>
+</html>
