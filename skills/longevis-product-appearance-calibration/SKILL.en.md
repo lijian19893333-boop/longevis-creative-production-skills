@@ -5,7 +5,7 @@ description: Use when existing 3D product geometry is close to a reference but m
 
 # Product Material and Lighting Calibration
 
-[中文版](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 Calibrate an existing 3D model against a photograph or an approved rendering while preserving geometry, animation, and viewer behavior. A reference expresses appearance intent; it does not establish measured colors, dimensions, or engineering parameters. Treat unseen surfaces as reasonable inferences.
 
