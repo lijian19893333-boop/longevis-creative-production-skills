@@ -3,41 +3,41 @@ name: longevis-baota-website-ops
 description: Use when uploading, updating, publishing, migrating, or rolling back websites on Baota, self-hosted servers, Nginx, systemd, or PM2, including ambiguous static versus SSR artifacts or uncertain deployment status.
 ---
 
-# 宝塔与自托管网站发布
+# Baota and Self-Hosted Website Deployment
 
-[English version](SKILL.en.md)
+[简体中文](SKILL.zh-CN.md)
 
-把每次发布做成可验证、可恢复的版本切换。先发现项目实际构建与运行方式，再决定上传什么；面板登记、进程运行、内网健康、正式域名可用是不同证据。
+Treat each release as a verifiable, recoverable version switch. Discover the project's actual build and runtime before deciding what to upload. Panel registration, a running process, internal health, and a working public domain are different evidence.
 
-## 开始前
+## Before starting
 
-记录目标站点、环境、域名、源码版本、构建脚本与产物、生产目录、运行入口、托管者、监听地址/端口、数据库/私有媒体/env/配置和回滚点。读取当前项目 README、包管理器锁文件、脚本和部署文档；不从本 skill 或旧记录猜路径、端口、Node 版本、命令或账号。
+Record the target site, environment, domains, source revision, build scripts and artifacts, production directory, runtime entrypoint, process manager, bind address/port, database/private media/env/configuration, and rollback point. Read the current project's README, package manager lockfile, scripts, and deployment documentation. Do not infer paths, ports, Node versions, commands, or accounts from this skill or old records.
 
-保留用户已授予的操作范围。用户授权发布且目标明确时，完成备份、候选版本验证后继续切换，不再重复索要同一授权。仅在关键目标不明、实际操作越出授权或工具要求审批时暂停依赖动作；仍可继续独立准备。skill 本身不授予生产操作权限。
+Preserve the user's existing authorization scope. When release authorization and targets are clear, complete backups and candidate checks, then proceed with the switch without asking for the same authorization again. Pause dependent actions only for an unknown critical target, an action outside authorization, or a tool-required approval; continue independent preparation. This skill itself does not authorize production operations.
 
-## 发布判断
+## Deployment decisions
 
-| 观察 | 决定 |
+| Observation | Decision |
 | --- | --- |
-| 项目确认静态导出，构建输出含入口 HTML | 静态文件由 Nginx 提供；独立识别 API/后台服务 |
-| 项目确认 SSR/Node 服务且存在匹配入口 | 按项目启动契约部署运行文件、依赖和服务；Nginx 反代 |
-| 同时存在 `dist/`、`.output/` 等产物 | 查脚本、README 与实际生产入口，排除旧产物；不能凭文件夹猜 |
-| 缺失预期产物或启动契约冲突 | 修复构建/配置后再发布 |
+| Project confirms static export with entry HTML in its build output | Serve static files with Nginx; identify API/admin services separately |
+| Project confirms SSR/Node execution with its matching entrypoint | Deploy runtime files, dependencies, and service according to the project contract; reverse proxy with Nginx |
+| Multiple outputs such as `dist/` and `.output/` coexist | Inspect scripts, README, and the actual production entrypoint; rule out stale artifacts instead of guessing from folders |
+| Expected output is missing or the startup contract conflicts | Repair the build/configuration before deployment |
 
-`dist/index.html` 和 `.output/server/index.mjs` 是常见例子，不是通用标准；其他框架产物以项目证据为准。
+`dist/index.html` and `.output/server/index.mjs` are common examples, not universal standards. Other frameworks require project-specific evidence.
 
-## 执行约束
+## Execution constraints
 
-1. 按最高影响面分级。文案/图片可走已存在的后台草稿与预览；涉及 API、数据库、env、权限、服务、域名或 DNS 时，处理完整应用及配置，不能只传前端。
-2. 在本地或隔离构建环境执行项目实际存在的检查与构建。生成必要运行文件的发布包，核对清单、大小与 SHA-256；按运行契约保留必需依赖，不盲目排除所有依赖目录。
-3. 保留旧版本，在独立候选目录/测试站验收。备份数据库、私有媒体、env 和 Nginx/服务配置，验证备份可读与恢复步骤；持久化数据放在版本目录和 Web 根目录之外。
-4. 服务只由一个托管者负责。宝塔 Node、systemd 与 PM2 不得重复抢同一端口。迁移托管方式需覆盖 env、数据、进程、流量切换和回滚。
-5. 候选版本通过后按既有授权切换；域名/DNS 变更仅在授权范围内实施。按实际影响验证正式 URL、关键业务流程与恢复路径。
+1. Classify by the highest impact. Text/images can use an existing admin draft and preview flow. Changes to API, database, env, permissions, services, domains, or DNS require the complete affected application and configuration, not a frontend-only upload.
+2. Run checks and builds that actually exist in the project, locally or in an isolated build environment. Package required runtime files and verify the manifest, size, and SHA-256. Include dependencies required by the runtime contract; do not blindly exclude every dependency directory.
+3. Preserve the previous version and validate an independent candidate directory/test site. Back up the database, private media, env, and Nginx/service configuration; verify readable backups and recovery steps. Keep persistent state outside release directories and Web roots.
+4. Assign one process manager to each service. Baota Node, systemd, and PM2 must not compete for one port. A manager migration must cover env, data, processes, traffic switching, and rollback.
+5. After candidate checks, switch within existing authorization. Change domains/DNS only within scope. Verify public URLs, critical business flows, and recovery paths according to the actual impact.
 
-部署、维护与回滚的详细步骤见[中文运行手册](references/deployment-runbook.zh.md)，英文对应见[English runbook](references/deployment-runbook.en.md)。
+See the [English runbook](references/deployment-runbook.en.md) for deployment, maintenance, and recovery procedures, or the equivalent [Chinese runbook](references/deployment-runbook.zh.md).
 
-## 交付证据
+## Delivery evidence
 
-报告源码版本、构建与包校验结果、候选验收、备份位置、实际服务托管者、正式 URL 验证、已知问题与回滚点。明确哪些仅本地/测试站通过，哪些已在正式环境核验。不得以“上传成功”“运行中”或“本地正常”宣称正式上线完成。
+Report source revision, build/package checks, candidate acceptance, backup locations, the actual process manager, public URL verification, known issues, and rollback point. Distinguish local/test-only results from checks performed in production. “Upload successful,” “running,” and “works locally” do not establish a completed public deployment.
 
-真实密码、Token、Cookie、SMTP 凭据、数据库和私有媒体不得进入聊天、Git、公开产物或脱敏前的日志。此公开版只提供方法，不包含任何站点凭据，也不证明某个站点已经上线。
+Never put passwords, tokens, cookies, SMTP credentials, databases, or private media in chat, Git, public artifacts, or logs before redaction. This public version supplies a method, contains no site credentials, and does not establish that any particular site has been deployed.

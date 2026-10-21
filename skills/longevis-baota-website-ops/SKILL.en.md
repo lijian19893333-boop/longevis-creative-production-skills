@@ -5,7 +5,7 @@ description: Use when uploading, updating, publishing, migrating, or rolling bac
 
 # Baota and Self-Hosted Website Deployment
 
-[中文版](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 Treat each release as a verifiable, recoverable version switch. Discover the project's actual build and runtime before deciding what to upload. Panel registration, a running process, internal health, and a working public domain are different evidence.
 
