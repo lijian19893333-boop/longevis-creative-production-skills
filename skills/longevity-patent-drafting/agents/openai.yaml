@@ -1,0 +1,6 @@
+interface:
+  display_name: Longevity · LONGEVIS Technical disclosures and engineering figures
+  short_description: Facts, components, drafts, annotation and editable figure-source
+    consistency
+  default_prompt: Use $longevity-patent-drafting for this task. Follow the user's
+    requested output language and verify the actual deliverables.
