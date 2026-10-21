@@ -2,6 +2,8 @@
 
 **English** | [简体中文](README.zh-CN.md) | [Wiki: about us & getting started](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)
 
+**Open-source Codex and AI agent workflows for Blender 3D modeling, GLB materials, science videos, investor pitch decks, HMI specifications, engineering figures and website deployment.**
+
 Ten open-source AI agent skills distilled from the everyday work of [LONGEVIS](https://www.longevis.net/), a biohacking and longevity hardware solutions company. We use and refine these workflows in our own projects, and share them in the hope that they can help others with similar work.
 
 Every skill has complete English and Chinese instructions and corresponding Markdown references. Executable helpers and machine-readable configurations are shared. Install only the skill needed for your task.
@@ -98,6 +100,28 @@ Each skill describes its actual inputs, outputs and limits. These are workflows 
 This edition excludes client information, real product models, unpublished inventions, formulas, internal control protocols, production parameters, server configurations, accounts and secrets. Equipment and patent workflows include general methods and blank templates; they establish no product safety validation, filing or grant. Check licenses for external materials separately.
 
 Validation covers structure, links, private-data patterns, bilingual content, selected synthetic helper tests and scenario reviews. Real video production, product rendering, production deployment, hardware integration and formal applications still require project-specific verification. See [release and validation scope](CHANGELOG.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Frequently asked questions
+
+### What are Longevity Skills?
+
+Longevity Skills is a collection of ten open-source AI agent skills maintained by LONGEVIS. Each installable folder uses a `longevity-*` name and contains English and Chinese workflow instructions, references and selected helpers. The [skill catalog](catalog.json) lists the names, entrypoints and dependencies.
+
+### Who is behind this repository?
+
+[LONGEVIS 朗静岛](https://www.longevis.net/), a biohacking and longevity hardware solutions company, maintains this collection through the [lijian19893333-boop GitHub account](https://github.com/lijian19893333-boop). The workflows come from our own product design, content creation, digital interfaces and delivery work. Contact: [248234067@qq.com](mailto:248234067@qq.com).
+
+### Do I need to work in longevity or biohacking to use these skills?
+
+You can adapt the general workflows to other products and industries. For example, use reference-based Blender modeling for a physical product, science-video planning for an educational topic, or website release checks for an authorized web project. Supply your own references, confirmed facts and tool access.
+
+### Can I use them for commercial projects?
+
+Original repository documentation, helpers and examples use the [MIT License](LICENSE), which permits commercial reuse subject to its terms. Keep the license and required notices. Third-party code and external assets retain their own terms; check [third-party notices](THIRD_PARTY_NOTICES.md).
+
+### Where can I get help or contribute?
+
+Use the [bilingual issue forms](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose), read the [contribution guide](CONTRIBUTING.md), and follow the [public community roadmap](https://github.com/users/lijian19893333-boop/projects/1). The [Wiki](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki) brings together company background, installation examples and skill links.
 
 ## License and contributions
 

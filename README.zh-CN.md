@@ -2,6 +2,8 @@
 
 [English](README.md) | **简体中文** | [Wiki：公司介绍与使用指南](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)
 
+**面向 Codex 与 AI Agent 的开源工作方法：Blender 三维建模、GLB 材质、科普视频、融资路演 BP、设备 HMI、工程附图和网站部署。**
+
 十个从 [LONGEVIS 朗静岛](https://www.longevis.net/) 日常工作中总结出来的开源 AI Agent Skill。我们自己使用，也在实际项目中不断调整和完善，希望这些经验能帮助到有相似需求的人。
 
 每个 Skill 都有完整中英文指令和对应语言的 Markdown 参考文档；脚本与机器可读配置共享使用。按任务选一个安装即可。
@@ -80,6 +82,28 @@ cp -R skills/longevity-reference-product-modeling ~/.codex/skills/
 公开版不含客户资料、真实产品模型、未公开发明、配方、内部控制协议、生产参数、服务器配置、账号或密钥。设备和专利 Skill 提供通用方法及空表；不表示某种产品已安全验证、某件申请已递交或获批。外部素材的许可需另行核对。
 
 本次检查覆盖结构、链接、隐私模式、双语内容、部分合成脚本测试和场景评审。实际视频、产品渲染、生产部署、硬件联调和正式申请均须按具体项目验证。查看 [版本与验证范围](CHANGELOG.md) 和 [第三方许可](THIRD_PARTY_NOTICES.md)。
+
+## 常见问题
+
+### Longevity Skills 是什么？
+
+这是由 LONGEVIS 朗静岛维护的十项开源 AI Agent Skill。安装文件夹统一使用 `longevity-*` 名称，提供完整中英文指令、参考文档和部分辅助工具。[机器可读目录](catalog.json)列出了技能名称、入口和依赖。
+
+### 谁在维护这个项目？
+
+[LONGEVIS 朗静岛](https://www.longevis.net/)是一家面向 biohacking 与 longevity 领域的硬件解决方案公司，通过 [lijian19893333-boop GitHub 账号](https://github.com/lijian19893333-boop)维护本项目。这些方法来自我们自己的产品设计、内容制作、数字交互和交付工作。交流邮箱：[248234067@qq.com](mailto:248234067@qq.com)。
+
+### 只有长寿健康或 biohacking 行业才能使用吗？
+
+其他产品和行业也可以借鉴这些通用方法。例如，实体产品可使用看图建模流程，教育主题可使用科普视频流程，已授权的网站项目可使用发布检查方法。使用者需要提供自己的参考资料、已确认事实和工具环境。
+
+### 可以用于商业项目吗？
+
+仓库自有文档、脚本和示例采用 [MIT License](LICENSE)，按许可条款允许商业使用，需保留许可和必要声明。第三方代码与外部素材分别适用其原有条款，详见[第三方许可](THIRD_PARTY_NOTICES.md)。
+
+### 在哪里反馈或参与改进？
+
+可以通过[中英文反馈表单](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose)提问或建议，阅读[贡献指南](CONTRIBUTING.zh-CN.md)，在[公开看板](https://github.com/users/lijian19893333-boop/projects/1)查看进展。[Wiki](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)汇总了公司背景、安装示例和技能入口。
 
 ## 许可与参与
 
