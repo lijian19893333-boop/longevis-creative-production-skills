@@ -5,7 +5,7 @@ description: Use when creating or redesigning an investor roadshow BP or financi
 
 # LONGEVIS Investor Pitch Deck Production
 
-[中文版](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 Turn raw material into an investor-readable pitch deck that the team can continue editing. Establish the investment logic and facts first, develop the visual and image system, then inspect and deliver every slide.
 

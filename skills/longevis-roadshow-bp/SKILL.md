@@ -1,115 +1,115 @@
 ---
 name: longevis-roadshow-bp
-description: Use when creating or redesigning an investor roadshow BP, financing pitch deck, 融资路演PPT or 商业计划书演示稿, especially from an existing deck whose substance must survive a redesign. Applies to investor narratives and visual production, not ordinary sales decks, training slides or product PRDs.
+description: Use when creating or redesigning an investor roadshow BP or financing pitch deck, especially from an existing deck whose substance must survive a redesign. Applies to investor narratives and visual production, not ordinary sales decks, training slides or product PRDs.
 ---
 
-# LONGEVIS 路演 BP 制作
+# LONGEVIS Investor Pitch Deck Production
 
-[English version](SKILL.en.md)
+[简体中文](SKILL.zh-CN.md)
 
-把原始资料变成投资人能读懂、团队能继续编辑的路演材料。先整理投资逻辑和事实，再建立视觉与配图系统，最后逐页检查交付。
+Turn raw material into an investor-readable pitch deck that the team can continue editing. Establish the investment logic and facts first, develop the visual and image system, then inspect and deliver every slide.
 
-## 适用边界与默认偏好
+## Scope and default preferences
 
-- 用于新建融资 BP，或在保留实质内容的前提下重做旧 BP。
-- 用户的当前指令、已确认方向、品牌资料和页数要求优先。已有明确授权就继续制作，不重复索取同一方向的批准。
-- **融资默认放在最后一页。** 不在后面自动添加致谢、原文对照、资料登记、设计方案比较或制作报告。
-- **内容图片每张只用一次，背景也算。** 同一教练照、产品主图和场景底图不能跨页重复；裁切、翻转、调色、加蒙版仍是同一张图。Logo、统一页眉和通用 UI 小图标可作为品牌识别复用。
-- 保留实质信息不等于保留原页数或坏排版。允许合并的冗余移出主稿，资料追踪记录放工作目录。
-- 本技能不固定行业、配色、产品、19页结构或历史融资数字。
+- Use for new fundraising decks or redesigns that preserve an existing deck's substantive information.
+- Current user instructions, approved direction, brand material, and slide-count requirements take precedence. Continue within existing explicit authorization instead of requesting approval of the same direction again.
+- **Place fundraising on the last slide by default.** Do not automatically append thanks, original-text comparisons, source registers, design comparisons, or production reports.
+- **Use every content image only once, including backgrounds.** A coach photo, product hero, or scene background cannot repeat across slides; cropping, flipping, grading, or masking still uses the same image. Logos, consistent headers, and generic small UI icons may recur as brand elements.
+- Preserving substance does not require preserving the original slide count or poor layout. Move permitted redundant material out of the main deck and keep traceability records in the working directory.
+- This skill does not prescribe an industry, palette, product, 19-slide structure, or historical funding figures.
 
-## 1. 明确项目和借鉴范围
+## 1. Establish the project and scope of references
 
-从当前对话与材料确认：受众、用途、正式品牌拼写、输出格式、锁定页数、可调整范围、已认可与被否定的元素。只问确实缺失且会影响成品的问题。
+From the current conversation and materials, confirm audience, purpose, official brand spelling, output formats, fixed slide count, adjustable scope, and accepted/rejected elements. Ask only about genuinely missing information that affects the result.
 
-把参考拆成独立元素：产品造型、材质、爆炸图、人物、场景、背景、UI、字体、版式。认可某张爆炸图不等于认可该页背景或版式；认可 UI 质感不等于继承示例的功能与数据。
+Break references into independent elements: product shape, materials, exploded views, people, scenes, backgrounds, UI, type, and layout. Approval of an exploded view does not approve that slide's background or layout. Approval of UI quality does not import the example's functions or data.
 
-投资人版本仍需解释商业判断。用户要求“可直接发给产品经理”，通常表示文件完整可交接，不能据此把 BP 改成 PRD。
+An investor version still needs to explain business judgments. A request for something “ready to send to a product manager” usually means a complete handoff file; it does not turn the BP into a PRD.
 
-## 2. 提取事实并建立内容去向
+## 2. Extract facts and track where content goes
 
-改版前完整检查旧稿的文字、图像、表格、图表、脚注和备注。建立工作清单：
+Before redesign, inspect all text, images, tables, charts, footnotes, and notes in the existing deck. Maintain a working register:
 
-`原页/原信息 → 新页位置 → 保留/合并/待填 → 事实状态 → 来源`
+`Original slide/information → destination slide → keep/merge/to fill → fact status → source`
 
-- 已确认事实、用户口述待核验、公开资料、规划目标、测算假设、设计示例分别处理。
-- 团队、研发进度、用户、合作渠道、订单、交付、收入、成本没有证据时，用可编辑填写位保留位置。
-- 数字的时间、币种、含税口径、基数和计算条件随数字一起保留；市场存量、年度收入、预测销售不能混为一项。
-- 可以简化表达，不删掉影响判断的限定条件。不要把目标写成已完成的业绩。
+- Treat confirmed facts, unverified user statements, public sources, planned targets, calculation assumptions, and design examples separately.
+- Where team, R&D, users, partners, orders, deliveries, revenue, or cost lack evidence, retain editable placeholders.
+- Preserve dates, currency, tax basis, denominator, and calculation conditions alongside numbers. Market installed base, annual revenue, and forecast sales are different measures.
+- Simplify expression without removing qualifications material to a decision. Do not present targets as accomplished results.
 
-需要市场、竞品或融资测算时，读 [商业叙事与事实](references/story-and-facts.md)。
+For market, competitor, or funding calculations, read [Business narrative and facts](references/story-and-facts.en.md).
 
-## 3. 先排投资逻辑，再决定页数
+## 3. Order the investment logic before choosing slide count
 
-采用以下逻辑顺序，按信息密度合并，不机械地每项占一页：
+Use the following logical order, merging by information density rather than assigning one slide to every item:
 
-1. 品牌与项目定位
-2. 目标用户、真实场景和问题
-3. 产品方案与核心价值
-4. 产品形态、关键技术或机制
-5. 使用体验、App/服务与价值证明
-6. 市场规模与首批切入人群
-7. 竞争替代与差异化
-8. 收费方式、成本与商业模式
-9. 渠道进入与客户验证
-10. 团队与真实进展
-11. 里程碑、关键风险与资金安排
-12. 融资需求、资金用途及对应成果
+1. Brand and project positioning
+2. Target users, real situations, and problems
+3. Product solution and core value
+4. Product form, key technology, or mechanism
+5. Experience, app/service, and evidence of value
+6. Market size and initial entry segment
+7. Alternatives and differentiation
+8. Charging, cost, and business model
+9. Channel entry and customer validation
+10. Team and actual progress
+11. Milestones, key risks, and funding allocation
+12. Funding request, use of proceeds, and corresponding outcomes
 
-已有页数按用户约定执行。未约定时先给紧凑主稿，通常从12–16页安排；内容确有需要再调整。保留全部实质信息是约束，增加对照页和过程记录不是解决溢出的办法。
+Follow the agreed slide count. If none exists, start with a compact main deck, usually 12–16 slides, and adjust for actual content. Preserving substantive information is a constraint; adding comparison pages and process logs is not a solution to overflow.
 
-每页先写“这一页帮助投资人判断什么”，再安排标题、关键证据、支撑文字和图像。页标题直接说明主题或有证据的结论。
+For each slide, write “What does this help the investor judge?” before arranging title, key evidence, supporting text, and images. Titles should name the topic or a conclusion supported by evidence.
 
-## 4. 建立视觉与逐页配图计划
+## 4. Establish visuals and a slide-by-slide image plan
 
-先明确该项目的视觉性格。高端运动穿戴可以采用“真实运动场景 + 时尚穿戴 + 精密硬件 + 数字体验”；医疗、工业或企业服务应从各自产品和受众出发。
+Define the project's visual character first. Premium sports wearables might combine real sporting scenes, fashion, precision hardware, and digital experience. Medical, industrial, or enterprise products should follow their own product and audience.
 
-先建逐页资产表，再批量制作：
+Create an asset plan before batch production:
 
-`页码 | 本页判断 | 图片主题 | 镜头/尺度 | 独立资产ID | 用途 | 来源/生成提示词 | 文字留白区域`
+`Slide | decision supported | image topic | camera/scale | unique asset ID | purpose | source/generation prompt | text-safe area`
 
-- 每个内容图片资产只分配一页。素材不够时生成/寻找不同场景与不同镜头，或让该页以原生图表承载；不要把同一图改裁切后重复使用。
-- 同一产品允许出现独立的佩戴、结构、侧面或材质特写，前提是画面内容有实际区别，产品设计保持一致。
-- 背景须能隐约提供行业现场，亮度和细节服从正文阅读。场景丰富与文字清晰同时验收。
-- 先做覆盖产品、场景、UI与数据的代表页；沿用已确认的方向铺开。方案比较只用于沟通，不自动并入主 BP。
+- Assign each content image to one slide only. If assets are insufficient, generate/find different scenes and camera views or use native charts; do not reuse a crop of the same image.
+- The same product may appear in independently composed wearing, structural, side, or material-close-up images if their visual content differs and the product design remains consistent.
+- Backgrounds should suggest the industry setting while keeping brightness/detail subordinate to reading. Assess both scene richness and text clarity.
+- First create representative product, scene, UI, and data slides, then extend the approved direction. Design comparisons are for discussion, not automatic inclusion in the BP.
 
-详细视觉与技术步骤见 [配图、融合与可编辑交付](references/visual-production.md)。公开版不附带真实项目的商业资料和案例图。
+See [Images, integration, and editable delivery](references/visual-production.en.md) for visual and technical details. This public package contains no real project's commercial information or example imagery.
 
-## 5. 制作可编辑的主稿
+## 5. Produce an editable main deck
 
-调用当前环境的 presentations 技能完成演示文稿；需要生成或编辑配图时调用 imagegen，导出 PDF 时使用当前 PDF 工作流。本技能补充内容与审美决策，不代替这些工具的运行和最终检查规范。
+Use the presentation skill available in the environment. Use image generation/editing capabilities and the relevant image skill when images are needed, and the available PDF workflow for PDF export. This skill supplies content and aesthetic decisions; it does not replace tool execution or final-check requirements.
 
-- 标题、正文、关键表格、数据图表和必要的 UI 说明保持原生可编辑。
-- 产品渲染和摄影作为图片资产。不要用整页截图代替可编辑页面，也不要把带白底的参考图硬贴到场景中。
-- 产品外观、CMF、穿戴方式、结构图和 UI 中的产品图应使用同一设计基准。设计概念与工程验证状态分开。
-- 每张外部/生成图的来源、确切提示词和使用页码留存；图像生成不能证明真实合作、产品性能或已完成进度。
-- 导出新版本，使用易辨认的文件名，保留来源文件。仅改图的任务优先保持其他文字与原生证据不变。
+- Keep titles, body text, key tables, data charts, and necessary UI explanations natively editable.
+- Treat product renders and photography as image assets. Do not replace editable slides with full-page screenshots or paste white-background references awkwardly onto scenes.
+- Use one design baseline for product appearance, CMF, wearing method, structural diagrams, and product images inside UI. Separate design concepts from engineering-validation status.
+- Preserve each external/generated image's source, exact prompt, and slide assignment. Generated imagery cannot prove partnerships, product performance, or completed progress.
+- Export a new version with a recognizable filename and retain source files. For image-only requests, preserve unrelated text and native evidence where possible.
 
-## 6. 验收后交付
+## 6. Inspect before delivery
 
-### 内容与结构
+### Content and structure
 
-- 所有应保留信息都有去向；关键数字、合计、单位、时间与脚注一致。
-- 页数符合约定；融资收尾；主稿中无未经请求的过程页。
-- 填写位保留为模板，规划和示例没有升级为业绩。
+- All required information has a destination; key figures, totals, units, times, and footnotes agree.
+- Slide count follows the agreement; fundraising closes the deck; the main deck contains no unrequested process pages.
+- Placeholders remain templates; plans and examples have not been promoted to achievements.
 
-### 视觉
+### Visuals
 
-- 生成整套缩略图检查叙事节奏、相似镜头、同一主图与背景的复用。
-- 按原尺寸逐页检查文字溢出、遮挡、人物动作、产品一致性、图片裁切和清晰度。
-- 对沙坑、反光金属、夕阳水面、包装纸等高光区域特别检查文字对比度，必要时调整局部遮罩或背景曝光。
-- 同一张图的不同文件名不会通过去重验收；文件哈希也无法识别所有裁切/调色复用，仍须看图。
+- Generate a full contact sheet to inspect narrative rhythm, similar camera compositions, and reuse of hero images or backgrounds.
+- Inspect every slide at its intended size for overflow, overlap, human poses, product consistency, crops, and sharpness.
+- Pay special attention to text contrast over bunkers, reflective metal, sunset water, packaging paper, and other highlights; adjust local masks or exposure if needed.
+- Renaming the same image does not pass deduplication. Hashes cannot identify all cropped/graded reuse; visual review remains necessary.
 
-### 文件
+### Files
 
-检查真实导出的 PPTX 能打开，原生表格/图表和嵌入工作簿存在，PDF 页数及页面外观与最终 PPTX 一致。只对实际完成的检查作结论。
+Verify that the actual exported PPTX opens, native tables/charts and embedded workbooks exist, and the PDF page count and appearance match the final PPTX. Claim only checks actually completed.
 
-可运行本技能的只读辅助检查，发现跨页重复图片和图片引用缺失：
+Run the read-only helper to find cross-slide image reuse and missing image references:
 
 ```bash
 python3 scripts/audit_pptx.py /path/to/final.pptx --report /private/work/pptx-audit.json
 ```
 
-对于确认是 Logo 或通用图标的媒体部件，逐个加 `--allow-reuse-media ppt/media/logo.png`。正文主图和背景不能因身份不明而全部豁免。
+For individually confirmed logos or generic icons, add `--allow-reuse-media ppt/media/logo.png`. Do not exempt all unidentified media, content heroes, or backgrounds.
 
-默认交付：可编辑 PPTX、PDF预览、整套总览和独立素材/提示词。校验报告留在工作目录，不自动加到投资人材料里。下载链接指向已验证的最终文件。
+Default delivery: editable PPTX, PDF preview, full-deck overview, and independent assets/prompts. Keep audit reports in the working directory rather than appending them to investor material. Download links must point to verified final files.
