@@ -5,6 +5,8 @@ description: Use when creating or redesigning an investor roadshow BP, financing
 
 # LONGEVIS 路演 BP 制作
 
+[English version](SKILL.en.md)
+
 把原始资料变成投资人能读懂、团队能继续编辑的路演材料。先整理投资逻辑和事实，再建立视觉与配图系统，最后逐页检查交付。
 
 ## 适用边界与默认偏好
