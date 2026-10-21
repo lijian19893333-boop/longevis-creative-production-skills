@@ -1,5 +1,7 @@
 # 商业叙事与事实
 
+[English version](story-and-facts.en.md)
+
 ## 投资人要判断的内容
 
 | 模块 | 要回答的问题 | 常见的有效证据 |
