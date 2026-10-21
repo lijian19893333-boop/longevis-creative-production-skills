@@ -1,0 +1,105 @@
+{
+  "version": "0.3.0",
+  "skills": [
+    {
+      "name": "longevis-science-video",
+      "title_zh": "科普视频",
+      "title_en": "Science videos",
+      "entry_zh": "skills/longevis-science-video/SKILL.md",
+      "entry_en": "skills/longevis-science-video/SKILL.en.md",
+      "summary_zh": "资料、机制分镜、旁白字幕与媒体验收",
+      "summary_en": "Sources, mechanism storyboards, narration, subtitles and media checks",
+      "dependencies": "Remotion / Blender / FFmpeg / narration tools as selected; no full renderer bundled"
+    },
+    {
+      "name": "longevis-roadshow-bp",
+      "title_zh": "融资路演 BP",
+      "title_en": "Investor pitch decks",
+      "entry_zh": "skills/longevis-roadshow-bp/SKILL.md",
+      "entry_en": "skills/longevis-roadshow-bp/SKILL.en.md",
+      "summary_zh": "叙事、证据、可编辑页面与 PPTX 图片审计",
+      "summary_en": "Narrative, evidence, editable slides and PPTX image auditing",
+      "dependencies": "Editable presentation authoring/rendering tools; audit helper uses Python standard library"
+    },
+    {
+      "name": "longevis-product-3d-workflow",
+      "title_zh": "产品三维与画册渲染",
+      "title_en": "Product 3D and brochure renders",
+      "entry_zh": "skills/longevis-product-3d-workflow/SKILL.md",
+      "entry_en": "skills/longevis-product-3d-workflow/SKILL.en.md",
+      "summary_zh": "A/B 方案、模型快照、批量渲染与图片打包",
+      "summary_en": "A/B variants, source snapshots, batch rendering and image packaging",
+      "dependencies": "Python 3.10+, Blender; Pillow and suitable fonts for image packaging"
+    },
+    {
+      "name": "longevis-website-launch",
+      "title_zh": "网站上线与维护",
+      "title_en": "Website launch",
+      "entry_zh": "skills/longevis-website-launch/SKILL.md",
+      "entry_en": "skills/longevis-website-launch/SKILL.en.md",
+      "summary_zh": "媒体、域名/HTTPS、上线和 SEO/GEO 验收",
+      "summary_en": "Media, domains/HTTPS, releases and SEO/GEO readiness",
+      "dependencies": "Actual project and authorized hosting access; commands discovered from the project"
+    },
+    {
+      "name": "longevis-reference-product-modeling",
+      "title_zh": "看图建模",
+      "title_en": "Reference-based product modeling",
+      "entry_zh": "skills/longevis-reference-product-modeling/SKILL.md",
+      "entry_en": "skills/longevis-reference-product-modeling/SKILL.en.md",
+      "summary_zh": "多视图几何校准、轮廓比对、真实模型与本地查看器",
+      "summary_en": "Multi-view geometry, silhouette comparison, native models and a local viewer",
+      "dependencies": "Blender; Python + Pillow for masks; local HTTP server and WebGL-capable browser"
+    },
+    {
+      "name": "longevis-product-appearance-calibration",
+      "title_zh": "材质与光感校准",
+      "title_en": "Material and lighting calibration",
+      "entry_zh": "skills/longevis-product-appearance-calibration/SKILL.md",
+      "entry_en": "skills/longevis-product-appearance-calibration/SKILL.en.md",
+      "summary_zh": "材质、光照、GLB 配方与原生/网页显示核对",
+      "summary_en": "Materials, lighting, GLB recipes and native/browser display checks",
+      "dependencies": "Python standard library for helper; 3D renderer/browser for visual acceptance"
+    },
+    {
+      "name": "longevis-baota-website-ops",
+      "title_zh": "宝塔部署与回滚",
+      "title_en": "Baota deployment and rollback",
+      "entry_zh": "skills/longevis-baota-website-ops/SKILL.md",
+      "entry_en": "skills/longevis-baota-website-ops/SKILL.en.md",
+      "summary_zh": "静态/SSR 识别、持久数据、候选版本与公开验证",
+      "summary_en": "Static/SSR routing, persistent data, release candidates and public verification",
+      "dependencies": "Authorized host/project access; actual Nginx and process-manager environment"
+    },
+    {
+      "name": "longevis-design-patent-3d-workflow",
+      "title_zh": "外观设计六视图",
+      "title_en": "Exterior design views",
+      "entry_zh": "skills/longevis-design-patent-3d-workflow/SKILL.md",
+      "entry_en": "skills/longevis-design-patent-3d-workflow/SKILL.en.md",
+      "summary_zh": "原生模型、六向方向、完整轮廓与图包一致性",
+      "summary_en": "Native models, six-view orientation, complete silhouettes and package consistency",
+      "dependencies": "Native 3D tool, image inspection; current filing requirements verified per task"
+    },
+    {
+      "name": "longevis-chamber-app",
+      "title_zh": "设备控制屏与 APP",
+      "title_en": "Equipment control apps",
+      "entry_zh": "skills/longevis-chamber-app/SKILL.md",
+      "entry_en": "skills/longevis-chamber-app/SKILL.en.md",
+      "summary_zh": "功能、设置、状态机、ACK/真实反馈与验收规范",
+      "summary_en": "Features, settings, state machines, ACK/physical feedback and acceptance specs",
+      "dependencies": "Current project evidence; no controller implementation or production protocol bundled"
+    },
+    {
+      "name": "longevis-patent-drafting",
+      "title_zh": "技术交底与工程附图",
+      "title_en": "Technical disclosures and engineering figures",
+      "entry_zh": "skills/longevis-patent-drafting/SKILL.md",
+      "entry_en": "skills/longevis-patent-drafting/SKILL.en.md",
+      "summary_zh": "事实、部件、文稿、标注与可编辑图源一致性",
+      "summary_en": "Facts, components, drafts, annotation and editable figure-source consistency",
+      "dependencies": "Current evidence, appropriate CAD/3D/document tools; no private inventions bundled"
+    }
+  ]
+}

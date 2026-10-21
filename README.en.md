@@ -2,77 +2,79 @@
 
 [简体中文](README.md) | **English**
 
-Four agent skills for science videos, investor pitch decks, product 3D workflows, and website launches.
+Ten agent skills developed through practical creative production, product delivery and website maintenance. Every skill has complete Chinese and English entrypoints with corresponding Markdown reference documents. Executable helpers and machine-readable configurations are shared. Install only the skill needed for your task.
 
-This collection connects evidence checks, editable production, and delivery verification. It provides workflow instructions, selected helper scripts, and configuration examples. Producing a finished video, deck, model, or website also requires the relevant tools and project materials.
+This update adds six skills: reference modeling, appearance calibration, Baota operations, exterior design views, equipment control apps, and technical disclosures/engineering figures. It also completes the English instructions and references for the original four skills.
 
-## Skills
+| English entry | 中文 | Purpose |
+|---|---|---|
+| [Science videos](skills/longevis-science-video/SKILL.en.md) | [中文](skills/longevis-science-video/SKILL.md) | Sources, mechanism storyboards, narration, subtitles and media checks |
+| [Investor pitch decks](skills/longevis-roadshow-bp/SKILL.en.md) | [中文](skills/longevis-roadshow-bp/SKILL.md) | Narrative, evidence, editable slides and PPTX image auditing |
+| [Product 3D and brochure renders](skills/longevis-product-3d-workflow/SKILL.en.md) | [中文](skills/longevis-product-3d-workflow/SKILL.md) | A/B variants, source snapshots, batch rendering and image packaging |
+| [Website launch](skills/longevis-website-launch/SKILL.en.md) | [中文](skills/longevis-website-launch/SKILL.md) | Media, domains/HTTPS, releases and SEO/GEO readiness |
+| [Reference-based product modeling](skills/longevis-reference-product-modeling/SKILL.en.md) | [中文](skills/longevis-reference-product-modeling/SKILL.md) | Multi-view geometry, silhouette comparison, native models and a local viewer |
+| [Material and lighting calibration](skills/longevis-product-appearance-calibration/SKILL.en.md) | [中文](skills/longevis-product-appearance-calibration/SKILL.md) | Materials, lighting, GLB recipes and native/browser display checks |
+| [Baota deployment and rollback](skills/longevis-baota-website-ops/SKILL.en.md) | [中文](skills/longevis-baota-website-ops/SKILL.md) | Static/SSR routing, persistent data, release candidates and public verification |
+| [Exterior design views](skills/longevis-design-patent-3d-workflow/SKILL.en.md) | [中文](skills/longevis-design-patent-3d-workflow/SKILL.md) | Native models, six-view orientation, complete silhouettes and package consistency |
+| [Equipment control apps](skills/longevis-chamber-app/SKILL.en.md) | [中文](skills/longevis-chamber-app/SKILL.md) | Features, settings, state machines, ACK/physical feedback and acceptance specs |
+| [Technical disclosures and engineering figures](skills/longevis-patent-drafting/SKILL.en.md) | [中文](skills/longevis-patent-drafting/SKILL.md) | Facts, components, drafts, annotation and editable figure-source consistency |
 
-| Skill | When to use it | Included resources |
-| --- | --- | --- |
-| [longevis-science-video](skills/longevis-science-video/SKILL.md) | Plan science explainers, build mechanism animations, prepare narration and subtitles, and verify video exports | Workflow and brief example; no complete rendering application |
-| [longevis-roadshow-bp](skills/longevis-roadshow-bp/SKILL.md) | Create or redesign investor pitch decks while retaining substantive information | Investor narrative, visual production guidance, and a PPTX image audit script |
-| [longevis-product-3d-workflow](skills/longevis-product-3d-workflow/SKILL.md) | Iterate on product models and variants, render multiple views, and package brochure images | Blender batch rendering, source snapshots, image packaging, and example configurations |
-| [longevis-website-launch](skills/longevis-website-launch/SKILL.md) | Prepare website releases, optimize media delivery, deploy to Baota/ECS, switch domains or HTTPS, and verify SEO/GEO readiness | Deployment runbook and release record template; no production configuration |
+## Install
 
-## Install in Codex
-
-Clone this repository, then copy the individual skill folders you need into your Codex skills directory. A common location is `~/.codex/skills/`.
+Clone the repository and copy an individual skill folder into your agent's skills directory. A common Codex location is `~/.codex/skills/`:
 
 ```sh
 git clone https://github.com/lijian19893333-boop/longevis-creative-production-skills.git
 cd longevis-creative-production-skills
 mkdir -p ~/.codex/skills
-cp -R skills/longevis-roadshow-bp ~/.codex/skills/
+cp -R skills/longevis-reference-product-modeling ~/.codex/skills/
 ```
 
-Check for an existing folder with the same name and back it up before copying. Open a new session and confirm that the skill is recognized. For other agents, follow that environment's skill installation instructions.
-
-Each skill is independent. You can install one without installing the rest of this collection. External production tools remain separate requirements.
+Check for and back up an existing folder before copying. Confirm recognition in a new session. `SKILL.md` is the default Chinese entrypoint. For complete English instructions, explicitly select `SKILL.en.md` in the same folder. Both use the same invocation name. Follow the corresponding installation conventions in other agents.
 
 ## Example prompts
 
 ```text
-Use $longevis-science-video to create a 60-second explainer about how sound travels.
-Verify the sources, produce a reviewable draft, and deliver subtitles and an editable storyboard.
-Write the narration in English.
+Use $longevis-reference-product-modeling, reading its SKILL.en.md.
+Create an editable model from my references and confirmed dimensions.
+Check silhouettes and view relationships first; deliver native files, GLB,
+a viewer and remaining differences.
 ```
 
 ```text
-Use $longevis-roadshow-bp to turn the project materials into a 12-slide investor pitch deck.
-Keep important facts, leave editable placeholders for unknown numbers, and put the funding ask last.
-Write the deck in English.
+Use $longevis-chamber-app to review settings persistence and reconnection.
+Separate requirements, source evidence, simulation, communication and hardware tests.
+Do not connect to or operate equipment.
 ```
 
 ```text
-Use $longevis-product-3d-workflow to create A/B product variants from my references and dimensions.
-Preserve the source models, render representative proofs first, then export PNG/JPG images and contact sheets.
+Use $longevis-baota-website-ops to inspect my release candidate and rollback plan.
+Discover actual build/start entrypoints and work within the authorization already given.
 ```
 
-```text
-Use $longevis-website-launch to inspect my website release candidate.
-Verify the build, backups and rollback plan, deploy within the authorization provided,
-and deliver a record of checks against the public website.
-```
+## Dependencies
 
-## Language support
+| Skill | Tools or project access |
+|---|---|
+| `longevis-science-video` | Remotion / Blender / FFmpeg / narration tools as selected; no full renderer bundled |
+| `longevis-roadshow-bp` | Editable presentation authoring/rendering tools; audit helper uses Python standard library |
+| `longevis-product-3d-workflow` | Python 3.10+, Blender; Pillow and suitable fonts for image packaging |
+| `longevis-website-launch` | Actual project and authorized hosting access; commands discovered from the project |
+| `longevis-reference-product-modeling` | Blender; Python + Pillow for masks; local HTTP server and WebGL-capable browser |
+| `longevis-product-appearance-calibration` | Python standard library for helper; 3D renderer/browser for visual acceptance |
+| `longevis-baota-website-ops` | Authorized host/project access; actual Nginx and process-manager environment |
+| `longevis-design-patent-3d-workflow` | Native 3D tool, image inspection; current filing requirements verified per task |
+| `longevis-chamber-app` | Current project evidence; no controller implementation or production protocol bundled |
+| `longevis-patent-drafting` | Current evidence, appropriate CAD/3D/document tools; no private inventions bundled |
 
-This README provides an English overview, installation instructions, examples, and dependency information. The detailed skill instructions and most reference documents are currently written in Chinese. You can request English or another output language in your prompt; this repository does not claim to provide complete English translations of every skill document.
+Each skill describes its actual inputs, outputs and limits. These are workflows and selected helpers, not a complete production application or an installation guarantee. No paid accounts or model services are included.
 
-## Requirements and limits
+## Evidence and public release scope
 
-- **Science video:** Depending on the project, prepare Remotion / Three.js, Blender, FFmpeg, and narration tools. This repository does not include a complete video renderer or paid service accounts.
-- **Investor pitch deck:** Requires editable presentation authoring and rendering tools. `audit_pptx.py` uses the Python standard library and detects byte-identical image reuse and missing references. It does not assess visual similarity or design quality.
-- **Product 3D:** General scripts require Python 3.10+. Render scripts run inside Blender Python. Image packaging requires Pillow and a font covering the labels. Adapt example dimensions, object names, camera positions, and paths to your models.
-- **Website launch:** Requires access to the actual project and hosting environment. Discover build and deployment commands from that project. No credentials, production configuration, or website application source is included.
-- Examples are workflow demonstrations, not verified business figures, manufacturing conclusions, medical claims, or funding commitments. Successful file generation and user acceptance are separate milestones.
+This edition excludes client information, real product models, unpublished inventions, formulas, internal control protocols, production parameters, server configurations, accounts and secrets. Equipment and patent workflows include general methods and blank templates; they establish no product safety validation, filing or grant. Check licenses for external materials separately.
 
-The current release has had syntax, internal link, and selected helper-script checks. Full video production, Blender rendering, and installation on other devices have not been verified for this public package.
+Validation covers structure, links, private-data patterns, bilingual content, selected synthetic helper tests and scenario reviews. Real video production, product rendering, production deployment, hardware integration and formal applications still require project-specific verification. See [release and validation scope](CHANGELOG.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-## Public release scope
+## License and contributions
 
-Local project paths, private narration history, real commercial case images, production deployment records, and project-specific parameter notes have been removed. Source models, film projects, customer records, and commercial presentation files are not included.
-
-## License
-
-All skill documentation, scripts, and examples in this repository are released under the [MIT License](LICENSE). Use, modification, redistribution, and commercial use are permitted subject to retaining the copyright and license notice. External tools, models, assets, and services keep their own licenses.
+Original repository documentation, helper scripts and examples use the [MIT License](LICENSE). Third-party viewer code retains its own copyrights and licenses. This repository grants no rights to external brand identities or project assets. Issues with reproducible inputs and PRs explaining purpose, checks and dependencies are welcome.

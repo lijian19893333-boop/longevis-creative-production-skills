@@ -1,4 +1,17 @@
-# 版本记录
+# 版本记录 / Changelog
+
+## 0.3.0 — 2026-10-22
+
+- 新增六个通用公开 Skill；补齐十项的完整中英文入口和所需参考文档。
+- Added six public workflows and complete Chinese/English entrypoints and required Markdown references for all ten skills.
+- 保留通用轮廓比对、GLB 查看器、材质配方脚本及测试；移除私有 catalog 适配器和产品案例。
+- Retained generic silhouette comparison, GLB viewing and appearance recipe helpers with scoped tests; excluded private catalog adapters and product cases.
+- 设备与专利部分仅公开通用方法及空表，不公开技术交底、生产参数或内部协议。
+- Equipment and patent packages publish methods and blank records, without private disclosures, production values or internal protocols.
+- 新增 catalog.json 和第三方许可说明。查看器依赖保留上游许可。
+- Added a machine-readable catalog and retained upstream viewer license notices.
+
+验证范围 / Validation scope: structure, local links, supported frontmatter, bilingual review, private-data pattern scans, synthetic helper tests and independent scenario reviews. The reference viewer is exercised with synthetic GLB fixtures; this does not validate a real product model. No production deployment, physical equipment operation, complete film/pitch/model production or formal patent filing is asserted by this release.
 
 ## 0.2.0
 

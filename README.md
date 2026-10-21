@@ -2,66 +2,61 @@
 
 **简体中文** | [English](README.en.md)
 
-四个用于创作、产品交付与网站上线的 Agent Skill：科普视频、融资路演 BP、产品三维设计与画册渲染、网站部署与验收。
+十个来自实际创作、产品交付和网站维护工作的 Agent Skill。每个 Skill 都有完整中文与英文入口，所需的 Markdown 参考文档提供对应语言版本；脚本和机器可读配置共享使用。按任务选一个安装即可。
 
-英文入口介绍安装、用途、依赖与使用示例；技能正文目前以中文为主。可以在任务中指定英文或其他输出语言。
+本次新增六项：看图建模、材质与光感校准、宝塔部署、外观六视图、设备控制屏、技术交底与工程附图。原有四项同步补齐英文正文与参考文档。
 
-这些技能把内容核对、可编辑制作和交付验收连在一起。它们提供工作方法和部分辅助脚本，实际成品仍需要对应工具、项目素材与人工评审。
+| 中文入口 | English | 用途 |
+|---|---|---|
+| [科普视频](skills/longevis-science-video/SKILL.md) | [English](skills/longevis-science-video/SKILL.en.md) | 资料、机制分镜、旁白字幕与媒体验收 |
+| [融资路演 BP](skills/longevis-roadshow-bp/SKILL.md) | [English](skills/longevis-roadshow-bp/SKILL.en.md) | 叙事、证据、可编辑页面与 PPTX 图片审计 |
+| [产品三维与画册渲染](skills/longevis-product-3d-workflow/SKILL.md) | [English](skills/longevis-product-3d-workflow/SKILL.en.md) | A/B 方案、模型快照、批量渲染与图片打包 |
+| [网站上线与维护](skills/longevis-website-launch/SKILL.md) | [English](skills/longevis-website-launch/SKILL.en.md) | 媒体、域名/HTTPS、上线和 SEO/GEO 验收 |
+| [看图建模](skills/longevis-reference-product-modeling/SKILL.md) | [English](skills/longevis-reference-product-modeling/SKILL.en.md) | 多视图几何校准、轮廓比对、真实模型与本地查看器 |
+| [材质与光感校准](skills/longevis-product-appearance-calibration/SKILL.md) | [English](skills/longevis-product-appearance-calibration/SKILL.en.md) | 材质、光照、GLB 配方与原生/网页显示核对 |
+| [宝塔部署与回滚](skills/longevis-baota-website-ops/SKILL.md) | [English](skills/longevis-baota-website-ops/SKILL.en.md) | 静态/SSR 识别、持久数据、候选版本与公开验证 |
+| [外观设计六视图](skills/longevis-design-patent-3d-workflow/SKILL.md) | [English](skills/longevis-design-patent-3d-workflow/SKILL.en.md) | 原生模型、六向方向、完整轮廓与图包一致性 |
+| [设备控制屏与 APP](skills/longevis-chamber-app/SKILL.md) | [English](skills/longevis-chamber-app/SKILL.en.md) | 功能、设置、状态机、ACK/真实反馈与验收规范 |
+| [技术交底与工程附图](skills/longevis-patent-drafting/SKILL.md) | [English](skills/longevis-patent-drafting/SKILL.en.md) | 事实、部件、文稿、标注与可编辑图源一致性 |
 
-| Skill | 适用任务 | 附带内容 |
-| --- | --- | --- |
-| [longevis-science-video](skills/longevis-science-video/SKILL.md) | 科普脚本、机制动画、旁白字幕与视频验收 | 通用流程、brief 示例；不含渲染工程 |
-| [longevis-roadshow-bp](skills/longevis-roadshow-bp/SKILL.md) | 新建或重做融资路演 BP | 商业叙事、配图规范、PPTX 图片审计脚本 |
-| [longevis-product-3d-workflow](skills/longevis-product-3d-workflow/SKILL.md) | 产品建模迭代、方案同步、多视角渲染 | Blender 渲染、源文件快照、图片打包脚本与配置 |
-| [longevis-website-launch](skills/longevis-website-launch/SKILL.md) | 网站上线、媒体加载、宝塔/ECS部署、域名与HTTPS切换、SEO/GEO验收 | 通用上线手册、发布记录模板；不含生产配置 |
+## 安装
 
-## 安装到 Codex
-
-将需要的单个 Skill 文件夹复制到你的 Codex skills 目录，常见位置为 `~/.codex/skills/`。先克隆仓库，再复制需要的技能：
+先克隆仓库，将需要的单个文件夹复制到所用 Agent 的技能目录。Codex 常见位置是 `~/.codex/skills/`：
 
 ```sh
 git clone https://github.com/lijian19893333-boop/longevis-creative-production-skills.git
 cd longevis-creative-production-skills
 mkdir -p ~/.codex/skills
-cp -R skills/longevis-roadshow-bp ~/.codex/skills/
+cp -R skills/longevis-reference-product-modeling ~/.codex/skills/
 ```
 
-复制前检查同名目录，已有版本时先备份，避免覆盖。重新打开会话后确认 Skill 已被识别。其他 Agent 环境请按其 Skill 安装方式复制对应目录。
+复制前检查并备份同名目录。新会话中确认技能被识别。`SKILL.md` 为默认中文入口；需要完整英文指令时指定同目录的 `SKILL.en.md`。两者使用同一调用名；其他 Agent 按其安装约定操作。
 
-## 使用示例
-
-```text
-使用 $longevis-science-video，制作一个解释声音如何传播的 60 秒科普视频。
-先核验资料，生成可评审样片，并交付字幕和可编辑分镜。
-```
+## 调用示例
 
 ```text
-使用 $longevis-roadshow-bp，把我提供的项目资料整理成 12 页融资路演 BP。
-保留关键事实，未知数据用可编辑填写位，融资放在最后。
+使用 $longevis-reference-product-modeling，根据参考图与已确认尺寸建立可编辑模型。
+先核对轮廓和视图关系，交付原生文件、GLB、查看器与仍存在的差异。
 ```
 
 ```text
-使用 $longevis-product-3d-workflow，基于我的参考图和尺寸建立 A/B 两套产品方案。
-保留源模型，先试渲染，再输出正式 PNG、JPG 和总览。
+使用 $longevis-chamber-app，审阅当前控制屏的设置保存与掉线恢复。
+区分需求、源码、模拟、通信和实机验证，不连接或驱动设备。
 ```
 
 ```text
-使用 $longevis-website-launch，检查我的网站发布候选，确认构建、备份与回退点，
-按本次授权完成上线，并交付公网验收记录。
+使用 $longevis-baota-website-ops，检查网站发布候选和回滚方案。
+从实际工程发现构建/启动入口，在已有授权范围内完成对应工作。
 ```
 
-## 运行依赖与边界
+## 工具、证据和公开范围
 
-- 科普视频：按制作方案准备 Remotion / Three.js、Blender、FFmpeg 或配音工具。本仓库不提供完整渲染器，也不绑定付费服务。
-- 路演 BP：需要可编辑 PPTX 制作与渲染工具。`audit_pptx.py` 使用 Python 标准库，只能检查字节级图片复用、缺失引用等，不能替代视觉验收。
-- 产品三维：普通脚本需要 Python 3.10+；渲染脚本在 Blender Python 中运行；图片打包需要 Pillow 及覆盖标签文字的字体。示例中的尺寸、机位、对象名和路径必须适配实际模型。
-- 网站上线：需要目标工程和托管环境的实际访问权限，具体命令从项目发现。公开版不包含账号、密钥、生产配置或站点源码。
-- 所有示例是工作流演示，不构成已确认项目数据、工程制造结论、产品疗效或融资承诺。
+工作方法不等于工具安装、生产代码或成品生成器。视频仍需制作工程与音频工具，PPT 需可编辑制作用具，三维需原生模型工具，部署需实际项目和托管访问。详见英文依赖表及各 Skill 的说明。
 
-## 公开版处理
+公开版不含客户资料、真实产品模型、未公开发明、配方、内部控制协议、生产参数、服务器配置、账号或密钥。设备和专利 Skill 提供通用方法及空表；不表示某种产品已安全验证、某件申请已递交或获批。外部素材的许可需另行核对。
 
-公开版移除了本机项目路径、私人配音历史、真实项目案例图和专属参数说明。原始模型、影片工程、客户资料与商业演示稿未包含在本仓库中。
+本次检查覆盖结构、链接、隐私模式、双语内容、部分合成脚本测试和场景评审。实际视频、产品渲染、生产部署、硬件联调和正式申请均须按具体项目验证。查看 [版本与验证范围](CHANGELOG.md) 和 [第三方许可](THIRD_PARTY_NOTICES.md)。
 
-## 许可
+## 许可与参与
 
-本仓库全部 Skill 文档、脚本与示例以 [MIT License](LICENSE) 开源。允许使用、修改、再分发和商业使用，须保留版权与许可声明。外部工具、模型、素材与服务适用各自许可，不随本仓库授权。
+本仓库自有文档、辅助脚本与示例采用 [MIT License](LICENSE)。查看器内第三方代码保留各自版权与许可，不转授品牌标志或外部项目资产权利。欢迎在 Issues 提交可复现问题，在 PR 中说明目的、输入、实际检查和依赖。
