@@ -1,6 +1,6 @@
 # 本地三维预览
 
-优先复用已有查看器，避免每轮增加页面和端口。新项目可复制本 Skill 的 `assets/viewer/` 到项目的 `preview/`，把普通、自带贴图的 GLB 放为 `preview/model.glb`，保留 vendor 目录完整。`index.html` 与 `index.en.html` 分别提供中文、英文界面，并可切换语言。
+优先复用已有查看器，避免每轮增加页面和端口。新项目可复制本 Skill 的 `assets/viewer/` 到项目的 `preview/`，把普通、自带贴图的 GLB 放为 `preview/model.glb`，保留 vendor 目录完整。`index.html` 默认提供英文界面，`index.zh-CN.html` 提供完整中文界面，均可切换语言；`index.en.html` 保留为英文兼容入口。
 
 从 Skill 目录运行：
 

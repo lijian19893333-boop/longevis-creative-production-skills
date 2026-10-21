@@ -1,6 +1,6 @@
 # Local Interactive 3D Preview
 
-Reuse a working project viewer instead of adding a page and port on each iteration. For a new project copy this skill's entire `assets/viewer/` into the project's `preview/`, put an ordinary GLB with embedded textures at `preview/model.glb`, and preserve `vendor/` intact. `index.html` and `index.en.html` provide Chinese and English interfaces with a language-switch link.
+Reuse a working project viewer instead of adding a page and port on each iteration. For a new project copy this skill's entire `assets/viewer/` into the project's `preview/`, put an ordinary GLB with embedded textures at `preview/model.glb`, and preserve `vendor/` intact. `index.html` provides the default English interface; `index.zh-CN.html` provides Chinese. Both have a language switch. `index.en.html` remains an English compatibility entry.
 
 Run from the skill directory, substituting your actual preview directory:
 
@@ -8,7 +8,7 @@ Run from the skill directory, substituting your actual preview directory:
 python3 scripts/serve_viewer.py --directory ./example-project/preview
 ```
 
-On Windows use `py` or the available Python command. The script prints the actual `http://127.0.0.1:PORT/index.html`; keep its process running. The link stops working when the process exits. For a stable entry point use `--port PORT` with a known available port. Do not kill an unknown process to resolve a conflict. Open `index.en.html` at the same host/port for the English interface.
+On Windows use `py` or the available Python command. The script prints the actual `http://127.0.0.1:PORT/index.html`; keep its process running. The link stops working when the process exits. For a stable entry point use `--port PORT` with a known available port. Do not kill an unknown process to resolve a conflict. Open `index.zh-CN.html` at the same host/port for the Chinese interface.
 
 A localhost link works only on the computer running the server. To share, package the GLB, HTML, JS, and vendor directory so the recipient can serve them locally; sending your 127.0.0.1 URL is insufficient. The page can also select a local GLB without uploading it to a third party.
 
