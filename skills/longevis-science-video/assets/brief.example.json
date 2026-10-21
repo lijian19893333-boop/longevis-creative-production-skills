@@ -1,0 +1,23 @@
+{
+  "id": "example-film-01",
+  "status": "template-not-production",
+  "topic": "[科普主题]",
+  "audience": "[目标观众]",
+  "language": "zh-CN",
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "sources": [],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "duration_seconds": 6,
+      "visual": "[画面与真实运动机制]",
+      "narration": "[需要来源支持的旁白]",
+      "caption": "[字幕]",
+      "sourceIds": []
+    }
+  ]
+}
