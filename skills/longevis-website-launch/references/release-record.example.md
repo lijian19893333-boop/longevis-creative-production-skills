@@ -1,5 +1,7 @@
 # Website release record / 网站发布记录
 
+[English version](release-record.example.en.md)
+
 This is a blank template. Fill it from the current project; do not include credentials or private customer data.
 以下字段均为填写位置，不代表任何站点已部署。
 
