@@ -1,0 +1,58 @@
+name: Improvement / 改进建议
+description: Suggest a workflow, documentation, example or helper improvement. 提出工作方法、文档、示例或脚本改进。
+title: '[Improve]: '
+labels:
+- enhancement
+body:
+- type: markdown
+  attributes:
+    value: English and Chinese are welcome. 欢迎使用中文或英文。 Please use shareable examples and remove credentials
+      or customer details. 请使用可公开的示例，移除密钥和客户资料。
+- type: dropdown
+  id: skill
+  attributes:
+    label: Affected skill / 相关 Skill
+    options:
+    - longevity-science-video
+    - longevity-roadshow-bp
+    - longevity-product-3d-workflow
+    - longevity-website-launch
+    - longevity-reference-product-modeling
+    - longevity-product-appearance-calibration
+    - longevity-baota-website-ops
+    - longevity-design-patent-3d-workflow
+    - longevity-chamber-app
+    - longevity-patent-drafting
+    - Repository / installation / 仓库或安装
+    - Other / 其他
+  validations:
+    required: true
+- type: textarea
+  id: need
+  attributes:
+    label: Problem or need / 问题与需求
+    description: What task are you trying to complete? 你希望完成什么任务？
+  validations:
+    required: true
+- type: textarea
+  id: proposal
+  attributes:
+    label: Proposed improvement / 建议方案
+  validations:
+    required: true
+- type: textarea
+  id: acceptance
+  attributes:
+    label: What would a useful result look like? / 如何验收？
+    description: Describe outputs, examples or checks. 描述期望产物、示例或核对方式。
+  validations:
+    required: true
+- type: dropdown
+  id: participation
+  attributes:
+    label: How would you like to help? / 参与方式
+    options:
+    - Discuss the idea / 参与讨论
+    - Test or review / 测试或审阅
+    - Contribute a pull request / 提交 PR
+    - Not sure yet / 暂未确定

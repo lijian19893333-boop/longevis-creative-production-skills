@@ -1,0 +1,56 @@
+name: Bug report / 问题报告
+description: Report a reproducible problem with a skill, helper or documentation. 报告可复现问题。
+title: '[Bug]: '
+labels:
+- bug
+body:
+- type: markdown
+  attributes:
+    value: English and Chinese are welcome. 欢迎使用中文或英文。 Please use shareable examples and remove credentials
+      or customer details. 请使用可公开的示例，移除密钥和客户资料。
+- type: dropdown
+  id: skill
+  attributes:
+    label: Affected skill / 相关 Skill
+    options:
+    - longevity-science-video
+    - longevity-roadshow-bp
+    - longevity-product-3d-workflow
+    - longevity-website-launch
+    - longevity-reference-product-modeling
+    - longevity-product-appearance-calibration
+    - longevity-baota-website-ops
+    - longevity-design-patent-3d-workflow
+    - longevity-chamber-app
+    - longevity-patent-drafting
+    - Repository / installation / 仓库或安装
+    - Other / 其他
+  validations:
+    required: true
+- type: input
+  id: environment
+  attributes:
+    label: Environment / 使用环境
+    description: Agent, OS, tool versions and skill version or commit. Agent、系统、工具版本及 Skill 版本或提交。
+  validations:
+    required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: Steps to reproduce / 复现步骤
+    description: Provide the command or prompt and a minimal shareable input. 提供命令或提示词，以及最小可公开输入。
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: Expected result / 预期结果
+  validations:
+    required: true
+- type: textarea
+  id: actual
+  attributes:
+    label: Actual result / 实际结果
+    description: Add sanitized errors or screenshots if helpful. 可附脱敏报错或截图。
+  validations:
+    required: true

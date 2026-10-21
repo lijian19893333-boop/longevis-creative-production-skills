@@ -1,4 +1,0 @@
-interface:
-  display_name: "LONGEVIS Product 3D and brochure renders"
-  short_description: "Product variants, model snapshots and brochure rendering"
-  default_prompt: "Use $longevis-product-3d-workflow for this task. Follow the user's requested output language and verify the actual deliverables."

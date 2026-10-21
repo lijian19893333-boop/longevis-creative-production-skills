@@ -1,0 +1,6 @@
+interface:
+  display_name: Longevity · LONGEVIS Equipment control apps
+  short_description: Features, settings, state machines, ACK/physical feedback and
+    acceptance specs
+  default_prompt: Use $longevity-chamber-app for this task. Follow the user's requested
+    output language and verify the actual deliverables.

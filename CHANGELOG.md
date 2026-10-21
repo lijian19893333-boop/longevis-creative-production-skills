@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 — Longevity names and community participation
+
+- Rename all ten installation folders and skill identifiers from `longevis-*` to `longevity-*`; update bilingual entries, references, catalog and examples. Back up local modifications and migrate one skill at a time.
+- Add bilingual issue forms, contribution instructions and a pull request template.
+- Add repository validation and existing GLB helper tests to GitHub Actions for pushes, pull requests and manual runs.
+- Link the public community roadmap and explain participation.
+
+
 ## 0.3.1 — 2026-10-22
 
 - English-first repository homepage, skill discovery instructions and UI metadata.

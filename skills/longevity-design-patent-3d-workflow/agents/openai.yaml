@@ -1,0 +1,6 @@
+interface:
+  display_name: Longevity · LONGEVIS Exterior design views
+  short_description: Native models, six-view orientation, complete silhouettes and
+    package consistency
+  default_prompt: Use $longevity-design-patent-3d-workflow for this task. Follow the
+    user's requested output language and verify the actual deliverables.

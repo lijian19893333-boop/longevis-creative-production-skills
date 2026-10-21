@@ -4,7 +4,7 @@ Original workflow documentation and helpers are licensed under the root MIT lice
 
 The reference-modeling viewer bundles a pinned `<model-viewer>` browser runtime. Its upstream copyright, version/source notice and transitive notices are preserved in:
 
-- [Viewer vendor notice](skills/longevis-reference-product-modeling/assets/viewer/vendor/README.md)
+- [Viewer vendor notice](skills/longevity-reference-product-modeling/assets/viewer/vendor/README.md)
 - The license files stored beside that runtime.
 
 These notices are part of the redistribution and must be retained. They do not mean that Google, Three.js, Lit or other upstream contributors endorse this collection. Other tools mentioned in the workflows are external dependencies, not bundled or relicensed software.
