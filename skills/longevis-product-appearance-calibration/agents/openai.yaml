@@ -1,0 +1,4 @@
+interface:
+  display_name: "产品材质与光感校准 / Product Appearance Calibration"
+  short_description: "校准三维产品材质与受光 / Calibrate 3D product materials and lighting"
+  default_prompt: "Use $longevis-product-appearance-calibration to calibrate an existing product model against its appearance reference and verify the actual viewer."
