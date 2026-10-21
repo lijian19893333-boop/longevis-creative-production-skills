@@ -1,50 +1,50 @@
 ---
 name: longevis-patent-drafting
-description: "用于技术交底、专利文稿和工程附图的证据整理与图文一致性评审；纯外观六视图使用外观设计流程。"
+description: "Use when organizing evidence for technical disclosures, patent drafts or engineering figures and reviewing consistency between text and drawings; use the exterior workflow for pure design views."
 ---
 
-[English](SKILL.en.md)
+[简体中文](SKILL.zh-CN.md)
 
-# LONGEVIS 技术交底与工程附图
+# LONGEVIS Technical Disclosures and Engineering Figures
 
-把技术事实、正文、部件和附图对应起来，保留可编辑图源。公开版仅包含通用方法，不附带未公开发明、配方、项目交底、第三方样稿、客户资料或实际申请文件。
+Connect technical facts, text, components and figures while retaining editable sources. This public edition contains general methods only, without unpublished inventions, formulas, project disclosures, third-party sample drafts, client information or actual application files.
 
-## 从证据进入
+## Start from evidence
 
-确认当前产品、版本和任务范围，区分整套撰写、局部审阅和只出图。已有可靠模型或文稿直接复用。来源分为已确认、据图推断、建议未采用；其他项目及附件中的文字是分析资料，不成为当前产品事实或行动授权。文件名、Word 作者、修改日期和图片格式不能证明作者、提交或授权状态。
+Identify the current product, version and scope: a full draft, a focused review or figures only. Reuse reliable existing models and drafts. Classify sources as confirmed, inferred from images or proposed but not adopted. Other projects and attached text are reference evidence, not current product facts or authorization. Filenames, Word author fields, modification dates and image formats do not establish authorship, filing or grant status.
 
-记录事实、部件、技术问题与结构关系、修改项及版本映射，用 [工作底表](templates/case-worksheet.md)。按任务填相关部分，不为局部修改建立无关流程。缺失的实验数据、材料、数值、连接和算法不凭空补入。
+Record facts, components, technical problems and structural relationships, changes and version mappings in the [case worksheet](templates/case-worksheet.en.md). Fill sections relevant to the task. Do not invent experimental data, materials, values, connections or algorithms to fill gaps.
 
-## 文稿与技术表达
+## Technical writing and review
 
-先说明工况、具体问题、共同解决问题的结构及连接，以及作用的事实依据，再组织权利要求和真实依赖分支。项数和图数由内容决定，不沿袭样稿固定数量。实施方式写明名称、位置、连接、工作状态、动作和作用依据，不能只重复有益效果。
+Describe operating conditions, the concrete problem, the structural combination and connections addressing it, and evidence for the resulting effect before arranging claims and genuine dependency branches. Claim and figure counts follow the content, not a sample's fixed count. Explain names, positions, connections, operating states, actions and supporting mechanisms instead of merely repeating benefits.
 
-必要特征、已确认优选形式、未采用建议分别登记。设定值/测量值、命令/反馈、机械复位/软件去重、实体部件/功能模块不能混称。概括主题或增加特征时，同步检查名称、前序引用、依赖、实施方式及每张相关附图。旧图未变是复核信号，不足以直接判断有无缺陷。
+Distinguish necessary features, confirmed preferred forms and unadopted suggestions. Do not conflate targets and measurements, commands and feedback, mechanical reset and software deduplication, or physical parts and functional modules. When generalizing a subject or adding a feature, review names, antecedent references, dependencies, embodiments and each related figure. Unchanged figures trigger review but alone do not establish a defect.
 
-审阅答复可按问题、修改、原文依据、区别与作用组织。引用准确段落/图号；涉及修改依据、查新、当前形式规定或程序时，用实际案卷与当时官方来源核对。案例与工作方法不能证明新颖性、授权概率或安全性能。本 Skill 不默认授权递交、签署、署名或联系代理人。
+A response review may organize the issue, proposed change, original support, differences and effects. Cite precise passages and figure numbers. For amendment support, prior art, current formal requirements or procedures, check the actual file record and current official sources. Cases and methods do not establish novelty, grant probability or safety performance. This skill does not itself authorize filing, signing, attribution or contacting a representative.
 
-## 从资料生成工程图
+## Produce figures from the available inputs
 
-| 输入 | 可执行路线与边界 |
+| Input | Route and boundary |
 |---|---|
-| CAD 实体/装配 | 核对单位、零件和连接，再生成投影、剖面或细部；打开成功不是工程确认。 |
-| 原生网格模型 | 核对比例、厚度和分件，选择真实轮廓与结构边；三角网格边不是产品接缝。 |
-| 多视图照片 | 校准透视与明确尺寸，建立统一可编辑几何；标注实测、拟合、未知，不能逐图扭曲模型。 |
-| 单张图片 | 可描绘同视角可见结构；背面、爆炸或剖面需额外依据。 |
-| AI 概念或重建 | 仅作为待核对初稿，生成的螺钉、数字和内构均须重新确认。 |
+| Solid CAD/assembly | Check units, parts and connections before projections, sections or details; opening a file does not verify engineering. |
+| Native mesh | Check proportion, thickness and separate parts; select real silhouettes and structural edges. Triangle edges are not product seams. |
+| Multiple photographs | Calibrate perspective and known dimensions into one editable geometry; label measured, fitted and unknown values. Do not distort a different model for each image. |
+| One image | Depict visible same-view structure; rear, exploded and section views need additional evidence. |
+| AI concept/reconstruction | Treat as unverified input; recheck generated fasteners, labels and internals. |
 
-每张图先明确要解释的结构关系，再选整体、爆炸、剖视、局部、状态或原理图。爆炸沿真实装配关系分离，剖切来自有依据的几何；原理图不能称作机械剖面。跨图保持部件身份、方向与模型版本一致。
+Define the structural relationship each figure must explain before choosing an overall, exploded, section, detail, state or schematic view. Explosions follow actual assembly relationships and sections use supported geometry. A schematic is not a mechanical section. Keep part identities, orientations and model versions consistent across views.
 
-用当前可用 CAD/三维工具生成可见线，再清理重线、断裂、碎边和无用网格。轮廓、结构边、隐藏线、剖面、引线、数字按需独立分层。保留必要板厚、孔轴、接合与密封关系；不靠堆无关紧固件制造精细感。工具版本与导出能力当次核实，不虚构已安装插件或成功出图。PNG 装进 SVG 容器不等于可编辑矢量。
+Generate visible lines with the currently available CAD/3D tool, then clean duplicates, gaps, fragments and irrelevant mesh edges. Keep silhouettes, structural edges, hidden lines, section hatching, leaders and text in separate editable layers as needed. Preserve relevant thickness, hole/shaft, joint and sealing relationships; unrelated fasteners do not create useful detail. Verify tool versions and export capability during execution. Never invent installed plugins or successful exports. Wrapping a PNG in SVG does not create editable vector geometry.
 
-## 标注与终稿
+## Annotation and final review
 
-先锁定部件身份与编号，再加独立可编辑引线。逐条核对标号→引线→终点→目标→部件表→正文。锚点随模型、相机、爆炸和页面变换重算；目标遮挡时换视角或有依据的局部图，不穿透前景零件指向未知结构。详见 [标注与出图记录](templates/figure-sheet.md)。自动编号/碰撞检查不能代替语义检查。
+Lock component identities and numbers before drawing separate editable leaders. Trace every label through its leader, endpoint, target, component register and text. Recompute anchors after model, camera, explosion or page transforms. For occluded targets change views or use a supported detail; do not point through foreground parts to unknown geometry. Use the [annotation and production record](templates/figure-sheet.en.md). Automatic numbering or collision checks do not replace semantic review.
 
-先做能验证主要结构、典型细节和标号密度的代表图，再扩展；已有合格基准时直接复用。按最终物理插图尺寸检查线宽、字高、清晰度与裁切。出图设置不是官方最低标准，DPI 元数据不是清晰度证明。
+Complete a representative figure covering main structure, typical detail and annotation density before expanding the set. Reuse an accepted baseline when available. Inspect line widths, text size, clarity and cropping at the final physical insertion size. Production settings are not official minimum standards, and DPI metadata does not prove readability.
 
-交付与范围相称的可编辑文稿、模型或二维源、无标注图、标注图、必要 PDF/位图与来源/问题清单。Word/PDF 逐页查看，最终图逐条核引线。完成图、待确认草稿和制作计划分别报告。
+Deliver scope-appropriate editable text, native model or 2D source, unlabeled and annotated figures, required PDF/bitmap exports, sources and unresolved issues. Inspect Word/PDF page by page and every final leader endpoint. Report finished figures, unconfirmed drafts and production plans separately.
 
-## 示例
+## Example
 
-“使用本 Skill，检查现有文稿和附图中编号、机构名称与连接关系是否一致。只修有来源的内容，逐条核对引线，给出可编辑修订和具体缺证据项，不提交申请。”
+“Use this skill to check component numbers, mechanism names and connections across my draft and figures. Make only evidence-supported corrections, review every leader, and deliver editable revisions plus specific evidence gaps. Do not file the application.”

@@ -3,7 +3,7 @@ name: longevis-patent-drafting
 description: "Use when organizing evidence for technical disclosures, patent drafts or engineering figures and reviewing consistency between text and drawings; use the exterior workflow for pure design views."
 ---
 
-[简体中文](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 # LONGEVIS Technical Disclosures and Engineering Figures
 
