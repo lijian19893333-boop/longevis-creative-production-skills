@@ -1,0 +1,4 @@
+interface:
+  display_name: "LONGEVIS 网站上线 / Website Launch"
+  short_description: "Website deployment, media delivery, HTTPS cutover and release verification"
+  default_prompt: "Use $longevis-website-launch to prepare and verify this website release, including backups, rollback, public URLs and outstanding checks. Follow the current project instructions and authorization."
