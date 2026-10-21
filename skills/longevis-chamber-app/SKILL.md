@@ -1,48 +1,48 @@
 ---
 name: longevis-chamber-app
-description: "用于设备控制屏、APP、HMI 的功能定义、设置、状态机、通信契约与交付评审；不用于普通商城或品牌展示网站。"
+description: "Use when specifying or reviewing equipment control screens, apps or HMIs, including settings, state machines, communication contracts and handoff acceptance; not for storefronts or brand websites."
 ---
 
-[English](SKILL.en.md)
+[简体中文](SKILL.zh-CN.md)
 
-# LONGEVIS 设备控制屏与 APP
+# LONGEVIS Equipment Control Apps
 
-将界面、设备能力、状态和证据对应起来。公开版提供功能定义方法及空白模板，不包含产品配方、生产参数、私有协议、密码、源码或可驱动设备的控制实现。
+Connect interfaces, equipment capabilities, states and evidence. This public edition supplies specification methods and blank templates. It contains no product formulas, production parameters, private protocols, passwords, application source or implementation that drives equipment.
 
-## 从当前工程进入
+## Start from the current project
 
-确认正式产品名、型号能力、屏幕与方向、源码/固件版本以及任务范围：功能说明、UI、交互、通信或平台迁移。优先延续现有技术路线；Android、WebView、HMI/PLC 等不能只因界面相似而当作同一实现。输入不足时完成可确定的部分，只询问影响后续决定的事实。
+Identify the official product name, model capabilities, screen/orientation, source and firmware versions, and task scope: specification, UI, interaction, communication or platform migration. Preserve the existing technical route. Android, WebView and HMI/PLC implementations are not interchangeable merely because their screens look similar. Complete supported work and ask only for facts that materially affect subsequent decisions.
 
-独立维护需求状态、实现状态、验证状态与来源。需求已确认、源码可见、构建、安装、模拟、通信、台架、整机和用户接受分别登记；归档或截图不能升级为硬件验证。
+Keep requirement status, implementation status, verification status and source separate. Record confirmed requirements, visible code, builds, installation, simulation, communication, bench tests, whole-machine tests and user acceptance individually. An archive or screenshot cannot establish hardware verification.
 
-## 定义功能
+## Specify features
 
-按实际能力检查开机/待机、首页、模式与参数、运行、结束、告警、记录、多媒体和维护。模块是检查目录，不要求每台设备都有。暂停、门锁、可调流量、位置反馈、OTA 等仅在当前设备具有证据时提供。
+Review startup/standby, home, modes/parameters, running, completion, alarms, records, media and maintenance according to actual capabilities. These are review categories, not mandatory modules for every device. Provide pause, door locks, adjustable flow, position feedback or OTA only when supported by the current equipment evidence.
 
-每项写清入口和角色、允许状态、输入/单位/范围/步长/默认来源、动作、确认与反馈、失败恢复、持久化、来源和验收。用 [功能模板](templates/function-spec.md) 与 [空白台账](templates/feature-register.csv)；未知范围标为待冻结，在明确标记的模拟环境继续评审，不从旧截图猜生产值。
+For each feature define entry/role, allowed states, input/unit/range/step/default source, action, acknowledgement and feedback, failure recovery, persistence, evidence and acceptance. Use the [feature template](templates/function-spec.en.md) and [blank register](templates/feature-register.csv). Mark unknown ranges as pending specification. Continue review in explicitly labeled simulation instead of guessing production values from old screenshots.
 
-## 参数和设置
+## Parameters and settings
 
-按谁能改、何时能改、存在哪里、何时生效分层。字段记录：`key, label, unit, type, default_source, range, step, editable_states, role, storage, apply_when, readback, rollback, source`。
+Classify settings by who can change them, in which state, where they persist and when they apply. Record `key, label, unit, type, default_source, range, step, editable_states, role, storage, apply_when, readback, rollback, source`.
 
-区分编辑草稿、已保存配置、已下发目标、设备实测值。保存成功不等于硬件已生效。显示单位可换算，通信单位遵守契约；页面、语言切换不应意外重置活动会话。检查旧值迁移、缺值/越界处理、保存防重复、回读不符、页面重进和重启持久化。认证与维护权限沿用当前项目，不能照搬其他设备密码或免密策略。
+Separate edit drafts, saved configuration, transmitted targets and device measurements. A successful save does not prove hardware application. Display units may convert; communication units follow the contract. Navigation or language changes should not accidentally reset active sessions. Check migration, missing/out-of-range values, duplicate submission, mismatched readback, re-entry and restart persistence. Preserve current authentication and maintenance roles; do not copy another device's password or password-free behavior.
 
-## 状态与通信
+## State and communication
 
-将 UI、产品规则、设备适配与控制器职责分层。分别表达连接、会话、命令与告警状态。记录计时权威、参数生效时点、停止后的收尾、重连与重启行为。按钮已按下、报文已收到、业务 ACK、输出已发、机构到位是不同状态；没有实际反馈就不能显示“已到位”。
+Separate UI, product rules, device adaptation and controller responsibilities. Represent connection, session, command and alarm states independently. Define the authoritative timer, parameter application point, post-stop cleanup, reconnection and restart behavior. A button press, received packet, business ACK, asserted output and completed mechanism movement are different states. Without real feedback, do not show “position reached.”
 
-登记物理接口、速率、地址、帧结构、校验、倍率、命令/状态、超时、幂等、版本和日志。主机重新连接先读权威状态，避免盲目重放启动等非幂等命令；具体策略由当前产品规范确定。
+Record physical interface, rate, address, frame/checksum, scale factors, commands/status, timeout, idempotency, versions and logs. Read authoritative state on reconnection before blindly replaying non-idempotent commands such as start; the precise policy belongs to the current product specification.
 
-逐项定义无连接启动、数值警告、硬故障、通信丢失、App 重启、主控重启/掉电以及设备具备的机械反馈变化。写清停止哪些输出、计时是否继续、恢复条件和提示。App 失联与主控掉电分别处理。演示/Mock 标识可见，不用自动演示掩盖真实断线。文档整理本身不授权驱动真实设备。
+Define disconnected startup, numerical warnings, hard faults, communication loss, app restart, controller restart/power loss and supported mechanical feedback changes individually. Specify affected outputs, timer behavior, recovery conditions and messages. App disconnection and controller power loss are different events. Make demo/Mock status visible; never mask a real disconnection with automatic demonstration. Writing documentation does not authorize physical operation.
 
-## UI、数据与验收
+## UI, data and acceptance
 
-保留已确认风格与布局，数值、按钮、表格和关键状态保持真实可编辑。按实际屏幕检查正常、选中、禁用、提交中、失败、无数据、断线、弹窗与唤醒；唤醒触摸不能穿透触发运行。
+Preserve approved styling and layout. Keep values, buttons, tables and essential states editable. At the actual screen dimensions inspect normal, selected, disabled, submitting, failed, empty, disconnected, modal and wake behavior. A wake touch must not pass through to a run control.
 
-日志关联版本、会话、操作、参数、结果、时间和结束原因。清除行为要明确范围、保留项、活动限制、确认、事务与恢复。升级按项目已有的兼容、来源/签名校验和失败处理实现，不因画了按钮就声称支持 OTA。
+Logs associate version, session, action, parameters, result, time and termination reason. For clearing data define exact scope, retained data, active-state restrictions, confirmation, transactions and recovery. Implement upgrades against actual compatibility, source/signature verification and failure handling; a button does not establish OTA capability.
 
-按 [验收场景](references/acceptance.md) 检查受改动影响的路径。交付必要的功能表、参数字典、状态/异常表、接口映射、预览或安装包及实测记录。完整方案可以包含明确的不适用项；构建通过与整机验收分别报告。
+Use the [acceptance scenarios](references/acceptance.en.md) for affected paths. Deliver the necessary feature register, parameter dictionary, state/exception tables, interface mapping, preview or installer, and observed test records. A complete specification may include explicit not-applicable entries. Report build success and whole-machine acceptance separately.
 
-## 示例
+## Example
 
-“使用本 Skill，审阅现有控制屏的设置保存和掉线恢复。保留当前框架，登记四种参数值、计时权威、ACK 与真实反馈的区别，交付可逐项验收的说明；不连接设备。”
+“Use this skill to review settings persistence and reconnection in an existing control screen. Preserve the framework; document four parameter-value stages, timer authority, ACK versus physical feedback, and verifiable acceptance cases. Do not connect equipment.”

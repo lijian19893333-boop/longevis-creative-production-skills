@@ -3,7 +3,7 @@ name: longevis-chamber-app
 description: "Use when specifying or reviewing equipment control screens, apps or HMIs, including settings, state machines, communication contracts and handoff acceptance; not for storefronts or brand websites."
 ---
 
-[简体中文](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 # LONGEVIS Equipment Control Apps
 
