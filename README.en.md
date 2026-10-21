@@ -1,4 +1,4 @@
-# LONGEVIS Creative Production Skills
+# Longevity Skills by LONGEVIS
 
 **English** | [简体中文](README.zh-CN.md) | [Wiki: about us & getting started](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)
 
@@ -26,16 +26,22 @@ These skills reflect what we have learned so far. We hope they help other builde
 
 | English entry | 中文 | Purpose |
 |---|---|---|
-| [Science videos](skills/longevis-science-video/SKILL.md) | [中文](skills/longevis-science-video/SKILL.zh-CN.md) | Sources, mechanism storyboards, narration, subtitles and media checks |
-| [Investor pitch decks](skills/longevis-roadshow-bp/SKILL.md) | [中文](skills/longevis-roadshow-bp/SKILL.zh-CN.md) | Narrative, evidence, editable slides and PPTX image auditing |
-| [Product 3D and brochure renders](skills/longevis-product-3d-workflow/SKILL.md) | [中文](skills/longevis-product-3d-workflow/SKILL.zh-CN.md) | A/B variants, source snapshots, batch rendering and image packaging |
-| [Website launch](skills/longevis-website-launch/SKILL.md) | [中文](skills/longevis-website-launch/SKILL.zh-CN.md) | Media, domains/HTTPS, releases and SEO/GEO readiness |
-| [Reference-based product modeling](skills/longevis-reference-product-modeling/SKILL.md) | [中文](skills/longevis-reference-product-modeling/SKILL.zh-CN.md) | Multi-view geometry, silhouette comparison, native models and a local viewer |
-| [Material and lighting calibration](skills/longevis-product-appearance-calibration/SKILL.md) | [中文](skills/longevis-product-appearance-calibration/SKILL.zh-CN.md) | Materials, lighting, GLB recipes and native/browser display checks |
-| [Baota deployment and rollback](skills/longevis-baota-website-ops/SKILL.md) | [中文](skills/longevis-baota-website-ops/SKILL.zh-CN.md) | Static/SSR routing, persistent data, release candidates and public verification |
-| [Exterior design views](skills/longevis-design-patent-3d-workflow/SKILL.md) | [中文](skills/longevis-design-patent-3d-workflow/SKILL.zh-CN.md) | Native models, six-view orientation, complete silhouettes and package consistency |
-| [Equipment control apps](skills/longevis-chamber-app/SKILL.md) | [中文](skills/longevis-chamber-app/SKILL.zh-CN.md) | Features, settings, state machines, ACK/physical feedback and acceptance specs |
-| [Technical disclosures and engineering figures](skills/longevis-patent-drafting/SKILL.md) | [中文](skills/longevis-patent-drafting/SKILL.zh-CN.md) | Facts, components, drafts, annotation and editable figure-source consistency |
+| [Science videos](skills/longevity-science-video/SKILL.md) | [中文](skills/longevity-science-video/SKILL.zh-CN.md) | Sources, mechanism storyboards, narration, subtitles and media checks |
+| [Investor pitch decks](skills/longevity-roadshow-bp/SKILL.md) | [中文](skills/longevity-roadshow-bp/SKILL.zh-CN.md) | Narrative, evidence, editable slides and PPTX image auditing |
+| [Product 3D and brochure renders](skills/longevity-product-3d-workflow/SKILL.md) | [中文](skills/longevity-product-3d-workflow/SKILL.zh-CN.md) | A/B variants, source snapshots, batch rendering and image packaging |
+| [Website launch](skills/longevity-website-launch/SKILL.md) | [中文](skills/longevity-website-launch/SKILL.zh-CN.md) | Media, domains/HTTPS, releases and SEO/GEO readiness |
+| [Reference-based product modeling](skills/longevity-reference-product-modeling/SKILL.md) | [中文](skills/longevity-reference-product-modeling/SKILL.zh-CN.md) | Multi-view geometry, silhouette comparison, native models and a local viewer |
+| [Material and lighting calibration](skills/longevity-product-appearance-calibration/SKILL.md) | [中文](skills/longevity-product-appearance-calibration/SKILL.zh-CN.md) | Materials, lighting, GLB recipes and native/browser display checks |
+| [Baota deployment and rollback](skills/longevity-baota-website-ops/SKILL.md) | [中文](skills/longevity-baota-website-ops/SKILL.zh-CN.md) | Static/SSR routing, persistent data, release candidates and public verification |
+| [Exterior design views](skills/longevity-design-patent-3d-workflow/SKILL.md) | [中文](skills/longevity-design-patent-3d-workflow/SKILL.zh-CN.md) | Native models, six-view orientation, complete silhouettes and package consistency |
+| [Equipment control apps](skills/longevity-chamber-app/SKILL.md) | [中文](skills/longevity-chamber-app/SKILL.zh-CN.md) | Features, settings, state machines, ACK/physical feedback and acceptance specs |
+| [Technical disclosures and engineering figures](skills/longevity-patent-drafting/SKILL.md) | [中文](skills/longevity-patent-drafting/SKILL.zh-CN.md) | Facts, components, drafts, annotation and editable figure-source consistency |
+
+## Contribute and migrate
+
+English and Chinese contributions are welcome. [Report an issue or suggest an improvement](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose), read the [contribution guide](CONTRIBUTING.md), and follow the [public roadmap](https://github.com/users/lijian19893333-boop/projects/1). Pull requests run catalog, bilingual entrypoint, local-link, JSON/YAML and Python syntax checks, plus the GLB helper tests.
+
+Since v0.4.0, all ten installation names use `longevity-*` in place of `longevis-*`. Back up local edits, install the new folder, confirm the new name in a fresh session, then remove the old folder to avoid duplicate loading. Previous versions remain in Git history. The repository URL is unchanged; LONGEVIS is the maintaining brand.
 
 ## Install
 
@@ -45,7 +51,7 @@ Clone the repository and copy an individual skill folder into your agent's skill
 git clone https://github.com/lijian19893333-boop/longevis-creative-production-skills.git
 cd longevis-creative-production-skills
 mkdir -p ~/.codex/skills
-cp -R skills/longevis-reference-product-modeling ~/.codex/skills/
+cp -R skills/longevity-reference-product-modeling ~/.codex/skills/
 ```
 
 Check for and back up an existing folder before copying. Confirm recognition in a new session. `SKILL.md` is the default English instruction file. Full Chinese instructions are in `SKILL.zh-CN.md` in the same folder. Existing `SKILL.en.md` links remain available. Follow the user’s requested output language, or their conversation language when unspecified. Follow the corresponding installation conventions in other agents.
@@ -53,20 +59,20 @@ Check for and back up an existing folder before copying. Confirm recognition in 
 ## Example prompts
 
 ```text
-Use $longevis-reference-product-modeling.
+Use $longevity-reference-product-modeling.
 Create an editable model from my references and confirmed dimensions.
 Check silhouettes and view relationships first; deliver native files, GLB,
 a viewer and remaining differences.
 ```
 
 ```text
-Use $longevis-chamber-app to review settings persistence and reconnection.
+Use $longevity-chamber-app to review settings persistence and reconnection.
 Separate requirements, source evidence, simulation, communication and hardware tests.
 Do not connect to or operate equipment.
 ```
 
 ```text
-Use $longevis-baota-website-ops to inspect my release candidate and rollback plan.
+Use $longevity-baota-website-ops to inspect my release candidate and rollback plan.
 Discover actual build/start entrypoints and work within the authorization already given.
 ```
 
@@ -74,16 +80,16 @@ Discover actual build/start entrypoints and work within the authorization alread
 
 | Skill | Tools or project access |
 |---|---|
-| `longevis-science-video` | Remotion / Blender / FFmpeg / narration tools as selected; no full renderer bundled |
-| `longevis-roadshow-bp` | Editable presentation authoring/rendering tools; audit helper uses Python standard library |
-| `longevis-product-3d-workflow` | Python 3.10+, Blender; Pillow and suitable fonts for image packaging |
-| `longevis-website-launch` | Actual project and authorized hosting access; commands discovered from the project |
-| `longevis-reference-product-modeling` | Blender; Python + Pillow for masks; local HTTP server and WebGL-capable browser |
-| `longevis-product-appearance-calibration` | Python standard library for helper; 3D renderer/browser for visual acceptance |
-| `longevis-baota-website-ops` | Authorized host/project access; actual Nginx and process-manager environment |
-| `longevis-design-patent-3d-workflow` | Native 3D tool, image inspection; current filing requirements verified per task |
-| `longevis-chamber-app` | Current project evidence; no controller implementation or production protocol bundled |
-| `longevis-patent-drafting` | Current evidence, appropriate CAD/3D/document tools; no private inventions bundled |
+| `longevity-science-video` | Remotion / Blender / FFmpeg / narration tools as selected; no full renderer bundled |
+| `longevity-roadshow-bp` | Editable presentation authoring/rendering tools; audit helper uses Python standard library |
+| `longevity-product-3d-workflow` | Python 3.10+, Blender; Pillow and suitable fonts for image packaging |
+| `longevity-website-launch` | Actual project and authorized hosting access; commands discovered from the project |
+| `longevity-reference-product-modeling` | Blender; Python + Pillow for masks; local HTTP server and WebGL-capable browser |
+| `longevity-product-appearance-calibration` | Python standard library for helper; 3D renderer/browser for visual acceptance |
+| `longevity-baota-website-ops` | Authorized host/project access; actual Nginx and process-manager environment |
+| `longevity-design-patent-3d-workflow` | Native 3D tool, image inspection; current filing requirements verified per task |
+| `longevity-chamber-app` | Current project evidence; no controller implementation or production protocol bundled |
+| `longevity-patent-drafting` | Current evidence, appropriate CAD/3D/document tools; no private inventions bundled |
 
 Each skill describes its actual inputs, outputs and limits. These are workflows and selected helpers, not a complete production application or an installation guarantee. No paid accounts or model services are included.
 

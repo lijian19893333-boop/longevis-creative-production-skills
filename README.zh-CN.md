@@ -1,4 +1,4 @@
-# LONGEVIS 创作与产品交付 Skills
+# Longevity Skills · LONGEVIS 创作与产品交付
 
 [English](README.md) | **简体中文** | [Wiki：公司介绍与使用指南](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)
 
@@ -26,16 +26,22 @@ LONGEVIS 朗静岛是一家面向 biohacking（生物黑客）与 longevity（�
 
 | 中文入口 | English | 用途 |
 |---|---|---|
-| [科普视频](skills/longevis-science-video/SKILL.zh-CN.md) | [English](skills/longevis-science-video/SKILL.md) | 资料、机制分镜、旁白字幕与媒体验收 |
-| [融资路演 BP](skills/longevis-roadshow-bp/SKILL.zh-CN.md) | [English](skills/longevis-roadshow-bp/SKILL.md) | 叙事、证据、可编辑页面与 PPTX 图片审计 |
-| [产品三维与画册渲染](skills/longevis-product-3d-workflow/SKILL.zh-CN.md) | [English](skills/longevis-product-3d-workflow/SKILL.md) | A/B 方案、模型快照、批量渲染与图片打包 |
-| [网站上线与维护](skills/longevis-website-launch/SKILL.zh-CN.md) | [English](skills/longevis-website-launch/SKILL.md) | 媒体、域名/HTTPS、上线和 SEO/GEO 验收 |
-| [看图建模](skills/longevis-reference-product-modeling/SKILL.zh-CN.md) | [English](skills/longevis-reference-product-modeling/SKILL.md) | 多视图几何校准、轮廓比对、真实模型与本地查看器 |
-| [材质与光感校准](skills/longevis-product-appearance-calibration/SKILL.zh-CN.md) | [English](skills/longevis-product-appearance-calibration/SKILL.md) | 材质、光照、GLB 配方与原生/网页显示核对 |
-| [宝塔部署与回滚](skills/longevis-baota-website-ops/SKILL.zh-CN.md) | [English](skills/longevis-baota-website-ops/SKILL.md) | 静态/SSR 识别、持久数据、候选版本与公开验证 |
-| [外观设计六视图](skills/longevis-design-patent-3d-workflow/SKILL.zh-CN.md) | [English](skills/longevis-design-patent-3d-workflow/SKILL.md) | 原生模型、六向方向、完整轮廓与图包一致性 |
-| [设备控制屏与 APP](skills/longevis-chamber-app/SKILL.zh-CN.md) | [English](skills/longevis-chamber-app/SKILL.md) | 功能、设置、状态机、ACK/真实反馈与验收规范 |
-| [技术交底与工程附图](skills/longevis-patent-drafting/SKILL.zh-CN.md) | [English](skills/longevis-patent-drafting/SKILL.md) | 事实、部件、文稿、标注与可编辑图源一致性 |
+| [科普视频](skills/longevity-science-video/SKILL.zh-CN.md) | [English](skills/longevity-science-video/SKILL.md) | 资料、机制分镜、旁白字幕与媒体验收 |
+| [融资路演 BP](skills/longevity-roadshow-bp/SKILL.zh-CN.md) | [English](skills/longevity-roadshow-bp/SKILL.md) | 叙事、证据、可编辑页面与 PPTX 图片审计 |
+| [产品三维与画册渲染](skills/longevity-product-3d-workflow/SKILL.zh-CN.md) | [English](skills/longevity-product-3d-workflow/SKILL.md) | A/B 方案、模型快照、批量渲染与图片打包 |
+| [网站上线与维护](skills/longevity-website-launch/SKILL.zh-CN.md) | [English](skills/longevity-website-launch/SKILL.md) | 媒体、域名/HTTPS、上线和 SEO/GEO 验收 |
+| [看图建模](skills/longevity-reference-product-modeling/SKILL.zh-CN.md) | [English](skills/longevity-reference-product-modeling/SKILL.md) | 多视图几何校准、轮廓比对、真实模型与本地查看器 |
+| [材质与光感校准](skills/longevity-product-appearance-calibration/SKILL.zh-CN.md) | [English](skills/longevity-product-appearance-calibration/SKILL.md) | 材质、光照、GLB 配方与原生/网页显示核对 |
+| [宝塔部署与回滚](skills/longevity-baota-website-ops/SKILL.zh-CN.md) | [English](skills/longevity-baota-website-ops/SKILL.md) | 静态/SSR 识别、持久数据、候选版本与公开验证 |
+| [外观设计六视图](skills/longevity-design-patent-3d-workflow/SKILL.zh-CN.md) | [English](skills/longevity-design-patent-3d-workflow/SKILL.md) | 原生模型、六向方向、完整轮廓与图包一致性 |
+| [设备控制屏与 APP](skills/longevity-chamber-app/SKILL.zh-CN.md) | [English](skills/longevity-chamber-app/SKILL.md) | 功能、设置、状态机、ACK/真实反馈与验收规范 |
+| [技术交底与工程附图](skills/longevity-patent-drafting/SKILL.zh-CN.md) | [English](skills/longevity-patent-drafting/SKILL.md) | 事实、部件、文稿、标注与可编辑图源一致性 |
+
+## 参与改进与命名迁移
+
+欢迎用中文或英文[报告问题或提建议](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose)，阅读[贡献指南](CONTRIBUTING.zh-CN.md)，并在[公开改进看板](https://github.com/users/lijian19893333-boop/projects/1)查看待办和进展。提交 PR 时，Actions 会检查目录、双语入口、文件链接、JSON/YAML、Python 语法，并运行 GLB 辅助脚本测试。
+
+从 v0.4.0 起，十项安装名统一由 `longevis-*` 改为 `longevity-*`。已有用户请先备份本地改动，安装新文件夹，确认新会话识别新名称后，再移除旧文件夹，避免重复加载。旧版历史仍可从 Git 提交中找到。仓库 URL 保持不变，LONGEVIS 为项目维护品牌。
 
 ## 安装
 
@@ -45,7 +51,7 @@ LONGEVIS 朗静岛是一家面向 biohacking（生物黑客）与 longevity（�
 git clone https://github.com/lijian19893333-boop/longevis-creative-production-skills.git
 cd longevis-creative-production-skills
 mkdir -p ~/.codex/skills
-cp -R skills/longevis-reference-product-modeling ~/.codex/skills/
+cp -R skills/longevity-reference-product-modeling ~/.codex/skills/
 ```
 
 复制前检查并备份同名目录。新会话中确认技能被识别。`SKILL.md` 为默认英文指令；完整中文版本在同目录的 `SKILL.zh-CN.md`。旧 `SKILL.en.md` 英文链接继续可用。输出语言按用户要求，未指定时沿用对话语言；其他 Agent 按其安装约定操作。
@@ -53,17 +59,17 @@ cp -R skills/longevis-reference-product-modeling ~/.codex/skills/
 ## 调用示例
 
 ```text
-使用 $longevis-reference-product-modeling，根据参考图与已确认尺寸建立可编辑模型。
+使用 $longevity-reference-product-modeling，根据参考图与已确认尺寸建立可编辑模型。
 先核对轮廓和视图关系，交付原生文件、GLB、查看器与仍存在的差异。
 ```
 
 ```text
-使用 $longevis-chamber-app，审阅当前控制屏的设置保存与掉线恢复。
+使用 $longevity-chamber-app，审阅当前控制屏的设置保存与掉线恢复。
 区分需求、源码、模拟、通信和实机验证，不连接或驱动设备。
 ```
 
 ```text
-使用 $longevis-baota-website-ops，检查网站发布候选和回滚方案。
+使用 $longevity-baota-website-ops，检查网站发布候选和回滚方案。
 从实际工程发现构建/启动入口，在已有授权范围内完成对应工作。
 ```
 
