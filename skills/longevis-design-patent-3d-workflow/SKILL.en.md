@@ -3,7 +3,7 @@ name: longevis-design-patent-3d-workflow
 description: "Use when preparing exterior-design review views from a native 3D model, or comparing engineer-reviewed views with an earlier model for direction, completeness and geometric consistency."
 ---
 
-[简体中文](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 # LONGEVIS Exterior Design Views
 

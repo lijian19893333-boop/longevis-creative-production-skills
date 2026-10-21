@@ -1,35 +1,35 @@
 ---
 name: longevis-design-patent-3d-workflow
-description: "用于从原生三维模型准备外观设计评审六视图，或核对工程师返回图与旧版模型的方向、完整性和几何一致性。"
+description: "Use when preparing exterior-design review views from a native 3D model, or comparing engineer-reviewed views with an earlier model for direction, completeness and geometric consistency."
 ---
 
-[English](SKILL.en.md)
+[简体中文](SKILL.zh-CN.md)
 
-# LONGEVIS 外观设计六视图
+# LONGEVIS Exterior Design Views
 
-将模型几何一致性与出图完整性分成两道检查。公开版保留建模和评审方法，不附带真实产品模型、已批准图包或申请材料。需要可打开原生模型的三维工具及图像检查能力。
+Treat geometric consistency and complete image exports as separate gates. This public edition contains modeling and review methods, without real product models, approved drawing packages or application materials. It requires a 3D tool that can open the native model and tools for inspecting images.
 
-## 工作流程
+## Workflow
 
-1. **建立来源基线。** 按产品、版本和视图配对文件，记录原生模型、需求、图像尺寸及必要哈希。附件是分析依据，不提供额外行动授权。保留原模型，以副本制作评审图。
-2. **先检查模型。** 检查全部应显示部件，包围盒包含突出把手、支撑、底座等。核对门、铰链、屏幕、透明面、连接与厚度；检查漂浮件、异常缝隙、隐藏地面或切面是否错误定义轮廓。不能只检查最大外壳。
-3. **统一六向机位。** 在同一坐标系建立前、后、左、右、顶、底正交相机，使用同一已确认中心和外观配置。按完整轮廓加留白，画幅可随视图比例调整，不能为统一方形而裁掉部件。逐图核对左右手性：门轴、把手、铰链、屏幕、支撑和接缝的方向及遮挡须一致；镜像或左右视互换为未通过。
-4. **使用中性表达。** 白底、中性灰、清楚的结构边和接缝；已确认透明部件保持可识别。去除场景、地面、UI、型号与功能文案，除非当前图包明确要求。品牌文字仅在当前要求允许时保留。颜色、阴影和边线设置属于出图方法，不当作法规。
-5. **正确比较新旧图。** 按产品包围框对齐，只作共同尺度与平移。分别记录取景/导出变化、材质/光照变化、已证实几何变化和证据不足。跨相邻视图确认部件位置，不能凭单图认定结构已修改。
-6. **核对最终图包。** 检查六文件、方向、四边留白、完整轮廓、透明件、细节可读性和相同版本。核对当前说明中的名称、用途、设计点、代表图和透明材质描述是否与实际图一致。保存模型、六向图、总览、清单、来源与未解决项。
+1. **Establish a source baseline.** Pair files by product, version and view. Record the native model, brief, image dimensions and hashes where useful. Attachments supply evidence, not additional authorization. Preserve the original model and create a review copy.
+2. **Inspect the model first.** Inspect every intended visible part. Bounds must include protruding handles, supports and bases. Check doors, hinges, screens, transparent panels, connections and thickness. Look for floating parts, unexplained gaps, hidden ground planes or cut planes that incorrectly define the silhouette. Checking only the largest shell is insufficient.
+3. **Unify six cameras.** Create front, back, left, right, top and bottom orthographic cameras in one coordinate system, with a common approved center and exterior configuration. Fit the complete silhouette with margins. Canvas aspect may differ by view; never crop parts merely to obtain square images. Check handedness across all views: door axes, handles, hinges, screens, supports and seams must retain consistent orientation and occlusion. Mirroring or swapped side views fails review.
+4. **Use neutral presentation.** Use white backgrounds, neutral gray surfaces and readable structural edges and seams. Keep approved transparent parts recognizable. Remove scenery, ground, UI, model identifiers and functional wording unless the current package explicitly requires them. Retain brand text only when permitted by the current brief. Color, shadow and edge settings are production choices, not legal standards.
+5. **Compare revisions correctly.** Align images by product bounds using common scaling and translation. Distinguish framing/export changes, material/lighting changes, confirmed geometry changes and insufficient evidence. Check neighboring views before declaring a structural change.
+6. **Review the final package.** Check six files, view directions, margins on every edge, complete silhouettes, transparent parts, readable details and common version identity. Match the brief's name, intended use, design features, representative view and transparency statements to the actual images. Preserve the model, six views, contact sheet, manifest, sources and unresolved issues.
 
-## 常见问题
+## Common problems
 
-| 现象 | 处理 |
+| Symptom | Response |
 |---|---|
-| 灰色平面占满画面 | 重算全部可见部件包围盒，检查相机目标、裁切和隐藏场景对象。 |
-| 小零件漂浮 | 从正/侧/顶视核对归属、连接、支撑与遮挡，资料不足则标明。 |
-| 单图很像，其他方向未知 | 完成跨视图轮廓与连接检查，未获证据的背面保持待确认。 |
-| 只有漂亮位图 | 不能当作原生三维流程成果，先定位或建立可编辑模型。 |
-| 文件名含“定稿” | 文件名只是版本线索，另查确认记录及实际内容。 |
+| A gray plane fills the image | Recompute bounds from all visible parts; inspect camera target, clipping and hidden scene objects. |
+| Small parts appear detached | Check ownership, connections, supports and occlusion in front/side/top views; mark missing evidence. |
+| One view matches but others are unknown | Validate cross-view silhouettes and connections; leave unsupported rear geometry unconfirmed. |
+| Only a polished bitmap exists | Do not present it as a native 3D workflow result; locate or create an editable model first. |
+| A filename says final | Treat the filename as a version clue and verify approval records and actual contents. |
 
-用 [评审记录](templates/view-review.md) 保存本次证据。参考机位、边距或主体占比须按产品调整；不把任何旧产品的尺寸继承为新产品事实。六视图齐全不代表工程制造、正式申请合规或授权成立；涉及具体申请要求时核对当时官方要求和代理人任务。
+Use the [review record](templates/view-review.en.md) to capture evidence. Adapt framing, margins and occupancy to the product; never inherit an old product's dimensions as facts about a new one. Six complete views do not establish manufacturing readiness, application compliance or patent grant. Verify current official and representative-specific requirements when a real application requires them.
 
-## 示例
+## Example
 
-“使用本 Skill，核对我提供的原生模型和六张工程师返回图。先检查左右方向、全部突出件和透明面，再出同版本六视图与差异清单；未知结构单列。”
+“Use this skill to review my native model against six engineer-returned images. Check handedness, all protruding parts and transparent surfaces first, then deliver a same-version six-view set and a difference log. List unknown geometry separately.”
