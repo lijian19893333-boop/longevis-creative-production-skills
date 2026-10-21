@@ -5,7 +5,7 @@ description: Use when recreating a Blender product model from reference renders,
 
 # Reference-Driven Product Modeling
 
-[中文](SKILL.md)
+[简体中文](SKILL.zh-CN.md)
 
 Turn references into a real model that can be inspected and revised. Establish which structures correspond across views before modeling and validation. Similarity to one render does not establish full three-dimensional accuracy.
 
