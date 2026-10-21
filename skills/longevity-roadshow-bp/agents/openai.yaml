@@ -1,0 +1,4 @@
+interface:
+  display_name: "Longevity · LONGEVIS Investor pitch decks"
+  short_description: "Narrative, evidence, editable slides and PPTX image auditing"
+  default_prompt: "Use $longevity-roadshow-bp for this task. Follow the user's requested output language and verify the actual deliverables."
