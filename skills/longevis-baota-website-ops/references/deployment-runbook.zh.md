@@ -1,6 +1,6 @@
 # 宝塔与自托管网站发布运行手册
 
-[English equivalent](deployment-runbook.en.md) · [返回 Skill](../SKILL.md)
+[English equivalent](deployment-runbook.en.md) · [返回 Skill](../SKILL.zh-CN.md)
 
 ## 1. 确定目标和变更等级
 
