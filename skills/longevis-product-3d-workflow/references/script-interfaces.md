@@ -1,5 +1,7 @@
 # 脚本接口
 
+[English version](script-interfaces.en.md)
+
 需要 Python 3.10+；Blender 脚本面向 Blender 4.2+/5.x，具体版本与 GPU 后端须在使用者环境中验证。图片打包另外需要 Pillow。渲染脚本在 Blender Python 内运行，其余脚本在普通 Python 中运行。优先发现环境已有依赖，不默认下载软件或修改全局设置。
 
 ## 准备任务
