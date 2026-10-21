@@ -1,5 +1,5 @@
 {
-  "title": "产品方案画册",
+  "title": "Product concept brochure",
   "output": "renders/brochure",
   "recipe": "studio_recipe.py",
   "proof_long_edge": 900,
@@ -8,23 +8,23 @@
   "hide": {"prefixes": ["Studio |"]},
   "material_overrides": {},
   "variants": [
-    {"id": "A", "label": "方案 A", "version": "v2", "source": "models/A/model.blend", "dependencies": []},
-    {"id": "B", "label": "方案 B", "version": "v4", "source": "models/B/model.blend", "dependencies": []}
+    {"id": "A", "label": "Variant A", "version": "v2", "source": "models/A/model.blend", "dependencies": []},
+    {"id": "B", "label": "Variant B", "version": "v4", "source": "models/B/model.blend", "dependencies": []}
   ],
   "shots": [
-    {"id": "01_hero", "label": "正面左侧主视觉", "size": [3600,3000], "camera": {"location": [-3.3,-7.7,2.72], "target": [0,0,1.02], "ortho_scale": 3.75}},
-    {"id": "02_front", "label": "正面", "size": [3600,3000], "camera": {"location": [0,-12.8,1.035], "target": [0,0,1.035], "lens": 130}},
-    {"id": "03_right", "label": "正面右侧", "size": [3600,3000], "camera": {"location": [4.7,-7.8,2.63], "target": [0,0,1.02], "ortho_scale": 3.8}},
-    {"id": "04_open", "label": "内开门状态", "size": [3600,3000], "object_rotations_degrees": {"DoorPivot": [0,0,85]}, "camera": {"location": [-2.5,-7.8,2.6], "target": [0,0,1.02], "ortho_scale": 3.7}},
-    {"id": "05_interior", "label": "舱内空间", "size": [3600,2700], "interior": true, "exposure": 0.15,
+    {"id": "01_hero", "label": "Front-left hero", "size": [3600,3000], "camera": {"location": [-3.3,-7.7,2.72], "target": [0,0,1.02], "ortho_scale": 3.75}},
+    {"id": "02_front", "label": "Front", "size": [3600,3000], "camera": {"location": [0,-12.8,1.035], "target": [0,0,1.035], "lens": 130}},
+    {"id": "03_right", "label": "Front-right", "size": [3600,3000], "camera": {"location": [4.7,-7.8,2.63], "target": [0,0,1.02], "ortho_scale": 3.8}},
+    {"id": "04_open", "label": "Door open inward", "size": [3600,3000], "object_rotations_degrees": {"DoorPivot": [0,0,85]}, "camera": {"location": [-2.5,-7.8,2.6], "target": [0,0,1.02], "ortho_scale": 3.7}},
+    {"id": "05_interior", "label": "Interior space", "size": [3600,2700], "interior": true, "exposure": 0.15,
       "hide": {"prefixes": ["Front |","Door","Hinge","Porthole","Display","Manual","Brand","Frame |"], "contains": ["front liner","entry reveal","porthole reveal"], "names": ["Ceiling | front arched end fascia","Ceiling light | front curved cove"]},
       "camera": {"location": [-0.18,-1.33,1.11], "target": [0,0.65,1.09], "lens": 20}},
-    {"id": "06_seating", "label": "沙发与后墙控制屏", "size": [3600,2700], "interior": true, "exposure": 0.15,
+    {"id": "06_seating", "label": "Seating and rear control screen", "size": [3600,2700], "interior": true, "exposure": 0.15,
       "hide": {"prefixes": ["Front |","Door","Hinge","Porthole","Display","Manual","Brand","Frame |"], "contains": ["front liner","entry reveal","porthole reveal"], "names": ["Ceiling | front arched end fascia","Ceiling light | front curved cove"]},
       "camera": {"location": [-0.95,-0.74,1.24], "target": [0.33,0.40,1.02], "lens": 23}},
-    {"id": "07_ceiling", "label": "星空顶与间接照明", "size": [3600,2700], "interior": true, "exposure": 0.15,
+    {"id": "07_ceiling", "label": "Star ceiling and indirect lighting", "size": [3600,2700], "interior": true, "exposure": 0.15,
       "hide": {"prefixes": ["Front |","Door","Hinge","Porthole","Display","Manual","Brand","Frame |"], "contains": ["front liner","entry reveal","porthole reveal"], "names": ["Ceiling | front arched end fascia","Ceiling light | front curved cove"]},
       "camera": {"location": [-0.15,-0.7,0.9], "target": [0,0.13,1.82], "lens": 18}},
-    {"id": "08_handle", "label": "透明门与内外把手", "size": [2400,3600], "camera": {"location": [-0.98,-2.00,1.14], "target": [-0.3692,-0.89,1.045], "lens": 87}}
+    {"id": "08_handle", "label": "Transparent door and handles", "size": [2400,3600], "camera": {"location": [-0.98,-2.00,1.14], "target": [-0.3692,-0.89,1.045], "lens": 87}}
   ]
 }

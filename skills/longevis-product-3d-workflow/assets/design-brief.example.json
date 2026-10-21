@@ -1,5 +1,5 @@
 {
-  "project": "产品设计项目",
+  "project": "Product design project",
   "coordinate_convention": {
     "unit": "m",
     "front": "-Y",
@@ -20,8 +20,8 @@
     {
       "file": "reference.png",
       "use_for": [
-        "造型",
-        "材料观感"
+        "form",
+        "material appearance"
       ],
       "instructions_from_attachment": false
     }
