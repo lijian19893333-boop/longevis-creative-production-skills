@@ -1,6 +1,10 @@
 # LONGEVIS 创作与产品交付 Skills
 
-三个面向中文工作场景的 Agent Skill：科普视频、融资路演 BP、产品三维设计与画册渲染。
+**简体中文** | [English](README.en.md)
+
+四个用于创作、产品交付与网站上线的 Agent Skill：科普视频、融资路演 BP、产品三维设计与画册渲染、网站部署与验收。
+
+英文入口介绍安装、用途、依赖与使用示例；技能正文目前以中文为主。可以在任务中指定英文或其他输出语言。
 
 这些技能把内容核对、可编辑制作和交付验收连在一起。它们提供工作方法和部分辅助脚本，实际成品仍需要对应工具、项目素材与人工评审。
 
@@ -9,6 +13,7 @@
 | [longevis-science-video](skills/longevis-science-video/SKILL.md) | 科普脚本、机制动画、旁白字幕与视频验收 | 通用流程、brief 示例；不含渲染工程 |
 | [longevis-roadshow-bp](skills/longevis-roadshow-bp/SKILL.md) | 新建或重做融资路演 BP | 商业叙事、配图规范、PPTX 图片审计脚本 |
 | [longevis-product-3d-workflow](skills/longevis-product-3d-workflow/SKILL.md) | 产品建模迭代、方案同步、多视角渲染 | Blender 渲染、源文件快照、图片打包脚本与配置 |
+| [longevis-website-launch](skills/longevis-website-launch/SKILL.md) | 网站上线、媒体加载、宝塔/ECS部署、域名与HTTPS切换、SEO/GEO验收 | 通用上线手册、发布记录模板；不含生产配置 |
 
 ## 安装到 Codex
 
@@ -40,11 +45,17 @@ cp -R skills/longevis-roadshow-bp ~/.codex/skills/
 保留源模型，先试渲染，再输出正式 PNG、JPG 和总览。
 ```
 
+```text
+使用 $longevis-website-launch，检查我的网站发布候选，确认构建、备份与回退点，
+按本次授权完成上线，并交付公网验收记录。
+```
+
 ## 运行依赖与边界
 
 - 科普视频：按制作方案准备 Remotion / Three.js、Blender、FFmpeg 或配音工具。本仓库不提供完整渲染器，也不绑定付费服务。
 - 路演 BP：需要可编辑 PPTX 制作与渲染工具。`audit_pptx.py` 使用 Python 标准库，只能检查字节级图片复用、缺失引用等，不能替代视觉验收。
 - 产品三维：普通脚本需要 Python 3.10+；渲染脚本在 Blender Python 中运行；图片打包需要 Pillow 及覆盖标签文字的字体。示例中的尺寸、机位、对象名和路径必须适配实际模型。
+- 网站上线：需要目标工程和托管环境的实际访问权限，具体命令从项目发现。公开版不包含账号、密钥、生产配置或站点源码。
 - 所有示例是工作流演示，不构成已确认项目数据、工程制造结论、产品疗效或融资承诺。
 
 ## 公开版处理
