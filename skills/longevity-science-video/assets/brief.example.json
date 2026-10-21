@@ -1,0 +1,23 @@
+{
+  "id": "example-film-01",
+  "status": "template-not-production",
+  "topic": "[Science topic]",
+  "audience": "[Target audience]",
+  "language": "en",
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "sources": [],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "duration_seconds": 6,
+      "visual": "[Visuals and actual mechanism motion]",
+      "narration": "[Evidence-supported narration]",
+      "caption": "[Caption]",
+      "sourceIds": []
+    }
+  ]
+}
