@@ -1,0 +1,6 @@
+interface:
+  display_name: Longevity · LONGEVIS Baota deployment and rollback
+  short_description: Static/SSR routing, persistent data, release candidates and public
+    verification
+  default_prompt: Use $longevity-baota-website-ops for this task. Follow the user's
+    requested output language and verify the actual deliverables.
