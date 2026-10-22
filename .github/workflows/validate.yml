@@ -33,3 +33,5 @@ jobs:
         run: python .github/scripts/check_repository.py
       - name: Run GLB helper tests
         run: python skills/longevity-product-appearance-calibration/scripts/test_apply_glb_recipe.py
+      - name: Run software copyright helper tests
+        run: python skills/longevity-software-copyright/scripts/test_helpers.py
