@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "purpose_en": "Blank working record. Map actual agency fields separately; this is not an official filing form.",
+  "purpose_zh": "空白工作记录。另行映射实际代理字段，不替代官方申请表。",
+  "status_values": ["pending", "proposed", "documented", "observed", "confirmed"],
+  "case": {
+    "software_name": "",
+    "short_name": "",
+    "version": "",
+    "recipient": "",
+    "template_reference": "",
+    "requirements_checked_on": ""
+  },
+  "facts": [],
+  "fact_item_shape": {
+    "key": "",
+    "label_en": "",
+    "label_zh": "",
+    "value": "",
+    "status": "pending",
+    "source": "",
+    "confirmation_needed": ""
+  },
+  "review_areas": [
+    "owner_and_identity",
+    "ownership_and_development_basis",
+    "software_name_version_scope",
+    "completion_date",
+    "publication_status_date_place",
+    "development_hardware_os_tools",
+    "runtime_hardware_os_environment",
+    "languages_source_scope_line_count",
+    "purpose_users_industry",
+    "main_functions",
+    "supported_technical_characteristics",
+    "authorized_contact_and_signature"
+  ],
+  "source_review": {
+    "revision": "",
+    "native_project": "",
+    "source_inventory": "",
+    "inclusion_order_basis": "",
+    "exclusions_and_reasons": [],
+    "coverage_status": "pending",
+    "coverage_evidence": "",
+    "matching_build_status": "pending"
+  },
+  "gaps": [],
+  "handoff_status": "draft",
+  "filing_receipt": "",
+  "registration_certificate": ""
+}
