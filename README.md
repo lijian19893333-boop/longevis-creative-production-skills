@@ -2,9 +2,9 @@
 
 **English** | [简体中文](README.zh-CN.md) | [Wiki: about us & getting started](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)
 
-**Open-source Codex and AI agent workflows for Blender 3D modeling, GLB materials, science videos, investor pitch decks, HMI specifications, engineering figures and website deployment.**
+**Open-source Codex and AI agent workflows for Blender 3D modeling, GLB materials, science videos, investor pitch decks, HMI specifications, engineering figures, software copyright materials and website deployment.**
 
-Ten open-source AI agent skills distilled from the everyday work of [LONGEVIS](https://www.longevis.net/), a biohacking and longevity hardware solutions company. We use and refine these workflows in our own projects, and share them in the hope that they can help others with similar work.
+Eleven open-source AI agent skills distilled from the everyday work of [LONGEVIS](https://www.longevis.net/), a biohacking and longevity hardware solutions company. We use and refine these workflows in our own projects, and share them in the hope that they can help others with similar work.
 
 Every skill has complete English and Chinese instructions and corresponding Markdown references. Executable helpers and machine-readable configurations are shared. Install only the skill needed for your task.
 
@@ -38,10 +38,11 @@ These skills reflect what we have learned so far. We hope they help other builde
 | [Exterior design views](skills/longevity-design-patent-3d-workflow/SKILL.md) | [中文](skills/longevity-design-patent-3d-workflow/SKILL.zh-CN.md) | Native models, six-view orientation, complete silhouettes and package consistency |
 | [Equipment control apps](skills/longevity-chamber-app/SKILL.md) | [中文](skills/longevity-chamber-app/SKILL.zh-CN.md) | Features, settings, state machines, ACK/physical feedback and acceptance specs |
 | [Technical disclosures and engineering figures](skills/longevity-patent-drafting/SKILL.md) | [中文](skills/longevity-patent-drafting/SKILL.zh-CN.md) | Facts, components, drafts, annotation and editable figure-source consistency |
+| [Software copyright applications and drafting](skills/longevity-software-copyright/SKILL.md) | [中文](skills/longevity-software-copyright/SKILL.zh-CN.md) | Agency templates, intake, function narratives, source provenance and drafter handoffs |
 
 ## Contribute and migrate
 
-English and Chinese contributions are welcome. [Report an issue or suggest an improvement](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose), read the [contribution guide](CONTRIBUTING.md), and follow the [public roadmap](https://github.com/users/lijian19893333-boop/projects/1). Pull requests run catalog, bilingual entrypoint, local-link, JSON/YAML and Python syntax checks, plus the GLB helper tests.
+English and Chinese contributions are welcome. [Report an issue or suggest an improvement](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose), read the [contribution guide](CONTRIBUTING.md), and follow the [public roadmap](https://github.com/users/lijian19893333-boop/projects/1). Pull requests run catalog, bilingual entrypoint, local-link, JSON/YAML and Python syntax checks, plus the GLB and software-copyright helper tests.
 
 Since v0.4.0, all ten installation names use `longevity-*` in place of `longevis-*`. Back up local edits, install the new folder, confirm the new name in a fresh session, then remove the old folder to avoid duplicate loading. Previous versions remain in Git history. The repository URL is unchanged; LONGEVIS is the maintaining brand.
 
@@ -78,6 +79,11 @@ Use $longevity-baota-website-ops to inspect my release candidate and rollback pl
 Discover actual build/start entrypoints and work within the authorization already given.
 ```
 
+```text
+Use $longevity-software-copyright to compare our package with the drafter's template.
+Prepare editable materials, verify source scope and list remaining gaps per software.
+```
+
 ## Dependencies
 
 | Skill | Tools or project access |
@@ -92,6 +98,7 @@ Discover actual build/start entrypoints and work within the authorization alread
 | `longevity-design-patent-3d-workflow` | Native 3D tool, image inspection; current filing requirements verified per task |
 | `longevity-chamber-app` | Current project evidence; no controller implementation or production protocol bundled |
 | `longevity-patent-drafting` | Current evidence, appropriate CAD/3D/document tools; no private inventions bundled |
+| `longevity-software-copyright` | Python 3.10+ standard library for helpers; actual source, current requirements and Word/PDF tools for finished materials |
 
 Each skill describes its actual inputs, outputs and limits. These are workflows and selected helpers, not a complete production application or an installation guarantee. No paid accounts or model services are included.
 
@@ -105,7 +112,7 @@ Validation covers structure, links, private-data patterns, bilingual content, se
 
 ### What are Longevity Skills?
 
-Longevity Skills is a collection of ten open-source AI agent skills maintained by LONGEVIS. Each installable folder uses a `longevity-*` name and contains English and Chinese workflow instructions, references and selected helpers. The [skill catalog](catalog.json) lists the names, entrypoints and dependencies.
+Longevity Skills is a collection of eleven open-source AI agent skills maintained by LONGEVIS. Each installable folder uses a `longevity-*` name and contains English and Chinese workflow instructions, references and selected helpers. The [skill catalog](catalog.json) lists the names, entrypoints and dependencies.
 
 ### Who is behind this repository?
 
