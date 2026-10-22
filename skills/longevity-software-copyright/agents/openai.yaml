@@ -1,0 +1,4 @@
+interface:
+  display_name: "Longevity · LONGEVIS 软著申请与撰写"
+  short_description: "Prepare evidence-based software copyright application materials"
+  default_prompt: "Use $longevity-software-copyright to prepare application materials and a concise drafter handoff in my language."
