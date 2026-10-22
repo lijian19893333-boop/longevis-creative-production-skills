@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0 — 2026-10-22
+
+- Add `longevity-software-copyright` with complete English/Chinese instructions, intake and handoff references, an original blank record and dated official-source links.
+- 新增软著申请与撰写流程，覆盖代理模板、主要功能、说明书、源码范围、版本一致性与撰写师交接；不含真实申请材料或代理模板原件。
+- Add standard-library helpers for Chinese-character counting and traceable source selection, with synthetic tests for all/first-last selection, provenance, changed files, native containers and unsafe paths.
+- Extend the catalog, bilingual homepages, issue selectors and CI to eleven skills. Original content remains MIT-licensed.
+
+Validation scope: local repository checks, synthetic helper tests and independent scenario review. No proprietary HMI export, finished application rendering, account filing or registration is asserted by this skill release.
+
 ## 0.4.0 — Longevity names and community participation
 
 - Rename all ten installation folders and skill identifiers from `longevis-*` to `longevity-*`; update bilingual entries, references, catalog and examples. Back up local modifications and migrate one skill at a time.

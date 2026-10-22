@@ -2,9 +2,9 @@
 
 [English](README.md) | **简体中文** | [Wiki：公司介绍与使用指南](https://github.com/lijian19893333-boop/longevis-creative-production-skills/wiki)
 
-**面向 Codex 与 AI Agent 的开源工作方法：Blender 三维建模、GLB 材质、科普视频、融资路演 BP、设备 HMI、工程附图和网站部署。**
+**面向 Codex 与 AI Agent 的开源工作方法：Blender 三维建模、GLB 材质、科普视频、融资路演 BP、设备 HMI、工程附图、软著申请材料和网站部署。**
 
-十个从 [LONGEVIS 朗静岛](https://www.longevis.net/) 日常工作中总结出来的开源 AI Agent Skill。我们自己使用，也在实际项目中不断调整和完善，希望这些经验能帮助到有相似需求的人。
+十一个从 [LONGEVIS 朗静岛](https://www.longevis.net/) 日常工作中总结出来的开源 AI Agent Skill。我们自己使用，也在实际项目中不断调整和完善，希望这些经验能帮助到有相似需求的人。
 
 每个 Skill 都有完整中英文指令和对应语言的 Markdown 参考文档；脚本与机器可读配置共享使用。按任务选一个安装即可。
 
@@ -38,10 +38,11 @@ LONGEVIS 朗静岛是一家面向 biohacking（生物黑客）与 longevity（�
 | [外观设计六视图](skills/longevity-design-patent-3d-workflow/SKILL.zh-CN.md) | [English](skills/longevity-design-patent-3d-workflow/SKILL.md) | 原生模型、六向方向、完整轮廓与图包一致性 |
 | [设备控制屏与 APP](skills/longevity-chamber-app/SKILL.zh-CN.md) | [English](skills/longevity-chamber-app/SKILL.md) | 功能、设置、状态机、ACK/真实反馈与验收规范 |
 | [技术交底与工程附图](skills/longevity-patent-drafting/SKILL.zh-CN.md) | [English](skills/longevity-patent-drafting/SKILL.md) | 事实、部件、文稿、标注与可编辑图源一致性 |
+| [软著申请与撰写](skills/longevity-software-copyright/SKILL.zh-CN.md) | [English](skills/longevity-software-copyright/SKILL.md) | 模板对照、信息采集、功能说明、源码追溯与撰写师交接 |
 
 ## 参与改进与命名迁移
 
-欢迎用中文或英文[报告问题或提建议](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose)，阅读[贡献指南](CONTRIBUTING.zh-CN.md)，并在[公开改进看板](https://github.com/users/lijian19893333-boop/projects/1)查看待办和进展。提交 PR 时，Actions 会检查目录、双语入口、文件链接、JSON/YAML、Python 语法，并运行 GLB 辅助脚本测试。
+欢迎用中文或英文[报告问题或提建议](https://github.com/lijian19893333-boop/longevis-creative-production-skills/issues/new/choose)，阅读[贡献指南](CONTRIBUTING.zh-CN.md)，并在[公开改进看板](https://github.com/users/lijian19893333-boop/projects/1)查看待办和进展。提交 PR 时，Actions 会检查目录、双语入口、文件链接、JSON/YAML、Python 语法，并运行 GLB 与软著辅助脚本测试。
 
 从 v0.4.0 起，十项安装名统一由 `longevis-*` 改为 `longevity-*`。已有用户请先备份本地改动，安装新文件夹，确认新会话识别新名称后，再移除旧文件夹，避免重复加载。旧版历史仍可从 Git 提交中找到。仓库 URL 保持不变，LONGEVIS 为项目维护品牌。
 
@@ -75,6 +76,11 @@ cp -R skills/longevity-reference-product-modeling ~/.codex/skills/
 从实际工程发现构建/启动入口，在已有授权范围内完成对应工作。
 ```
 
+```text
+使用 $longevity-software-copyright，对照撰写师模板检查已有材料。
+补齐有依据的申请文档，核对源码范围，逐款列明剩余缺口。
+```
+
 ## 工具、证据和公开范围
 
 工作方法不等于工具安装、生产代码或成品生成器。视频仍需制作工程与音频工具，PPT 需可编辑制作用具，三维需原生模型工具，部署需实际项目和托管访问。详见英文依赖表及各 Skill 的说明。
@@ -87,7 +93,7 @@ cp -R skills/longevity-reference-product-modeling ~/.codex/skills/
 
 ### Longevity Skills 是什么？
 
-这是由 LONGEVIS 朗静岛维护的十项开源 AI Agent Skill。安装文件夹统一使用 `longevity-*` 名称，提供完整中英文指令、参考文档和部分辅助工具。[机器可读目录](catalog.json)列出了技能名称、入口和依赖。
+这是由 LONGEVIS 朗静岛维护的十一项开源 AI Agent Skill。安装文件夹统一使用 `longevity-*` 名称，提供完整中英文指令、参考文档和部分辅助工具。[机器可读目录](catalog.json)列出了技能名称、入口和依赖。
 
 ### 谁在维护这个项目？
 
