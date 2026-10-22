@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "skills": [
     {
       "name": "longevity-science-video",
@@ -100,6 +100,16 @@
       "summary_zh": "事实、部件、文稿、标注与可编辑图源一致性",
       "summary_en": "Facts, components, drafts, annotation and editable figure-source consistency",
       "dependencies": "Current evidence, appropriate CAD/3D/document tools; no private inventions bundled"
+    },
+    {
+      "name": "longevity-software-copyright",
+      "title_zh": "Longevity · 软著申请与撰写",
+      "title_en": "Longevity · Software copyright applications and drafting",
+      "entry_zh": "skills/longevity-software-copyright/SKILL.zh-CN.md",
+      "entry_en": "skills/longevity-software-copyright/SKILL.md",
+      "summary_zh": "模板对照、采集表、功能说明、程序范围与撰写师交接",
+      "summary_en": "Agency templates, intake, function narratives, source provenance and drafter handoffs",
+      "dependencies": "Python 3.10+ standard library for helpers; actual source, current requirements and Word/PDF tools for finished materials"
     }
   ],
   "default_language": "en"
